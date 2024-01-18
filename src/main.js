@@ -2,6 +2,7 @@ import { example } from './dataFunctions.js';
 import { renderItems } from './view.js';
 
 import data from './data/dataset.js';
+<<<<<<< HEAD
 
 console.log("aqui main"+ example, renderItems(data), data);
 
@@ -60,3 +61,7 @@ searchButton.addEventListener('click', () => {
   }
 
 });
+=======
+//prueba2
+console.log(example, renderItems(data), data);
+>>>>>>> 99d95335d15b7ed1d15d828576548147095ed310

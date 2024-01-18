@@ -1,23 +1,23 @@
 .ul {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  li {
-    list-style: none;
-    width: calc(33.33% - 20px); /* Ajusta según sea necesario */
-    margin: 10px;
-    box-sizing: border-box;
-  }
-  .img{
-    width: 200px;
-    height: 300px;
-  }
-  .parrafo{
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .name{
-    margin: 0;
-    padding: 0;
-  }
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  list-style: none;
+  width: calc(33.33% - 20px); /* Ajusta según sea necesario */
+  margin: 10px;
+  box-sizing: border-box;
+}
+.img {
+  width: 200px;
+  height: 300px;
+}
+.parrafo {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.name {
+  margin: 0;
+  padding: 0;
+}

@@ -7,4 +7,4 @@ export const example = () => {
 export const anotherExample = () => {
   return [];
 };
-prueba
+prueba.anotherExample

@@ -9,9 +9,10 @@ export const renderItems = (data) => {
 
     // Asigna el contenido del <li> con los datos del elemento actual
     liElement.innerHTML = `
+      <img src="${item.imageUrl}" alt="${item.name}" class="img">
       <h2>${item.name}</h2>
       <p>${item.description}</p>
-      <img src="${item.imageUrl}" alt="${item.name}" class="img">
+
     `;
 
     // Agrega el <li> al elemento <ul>

@@ -1,25 +1,45 @@
+/**
+ * @description esta funcion crea cada li para cada tarjeta
+ * @return {HTMLUListElement} retorna el elemnto ul
+ * @author karen valeria
+ * @author wendy nicol
+ */
 export const renderItems = (data) => {
-  // Aquí comienza tu código y puedes retornar lo que tu necesites
-  const ulElement = document.querySelector('.ul'); // Selecciona el elemento <ul>
+  const $contenedorTarjetas = document.createElement("ul");
+  $contenedorTarjetas.setAttribute("class", "ul");
 
-  // Itera sobre los elementos en el array de datos
   data.forEach((item) => {
-    // Crea un elemento <li> por cada elemento en el array de datos
-    const liElement = document.createElement('li');
+    const $tarjeta = document.createElement("li");
 
-    // Asigna el contenido del <li> con los datos del elemento actual
-    liElement.innerHTML = `
-      <img src="${item.imageUrl}" alt="${item.name}" class="img">
-      <h2>${item.name}</h2>
-      <p>${item.description}</p>
+    // <img src=item.imageUrl alt=item.name class=img />
+    const $imagen = document.createElement("img");
+    $imagen.setAttribute("src", item.imageUrl);
+    $imagen.setAttribute("alt", item.name);
+    $imagen.setAttribute("class", "img");
 
-    `;
+    // <p class=parrafo>item.description</p>
+    const $parrafo = document.createElement("p");
+    $parrafo.setAttribute("class", "parrafo");
+    $parrafo.innerText = item.description;
 
-    // Agrega el <li> al elemento <ul>
-    ulElement.appendChild(liElement);
+    // <h2>item.name</h2>
+    const $titulo = document.createElement("h2");
+    $titulo.innerText = item.name;
+
+    /*
+     <li>
+      <img src=item.imageUrl alt=item.name class=img />
+      <h2>item.name</h2>
+      <p class=parrafo>item.description</p>
+     </li> 
+     */
+    $tarjeta.appendChild($imagen);
+    $tarjeta.appendChild($titulo);
+    $tarjeta.appendChild($parrafo);
+    
+
+    $contenedorTarjetas.appendChild($tarjeta);
   });
 
-  // Puedes retornar algo si es necesario
-  return 'Rendered items successfully';
-  //return 'example';
+  return $contenedorTarjetas;
 };

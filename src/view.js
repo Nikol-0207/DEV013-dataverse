@@ -20,7 +20,7 @@ export const renderItems = (data) => {
     // <p class=parrafo>item.description</p>
     const $parrafo = document.createElement("p");
     $parrafo.setAttribute("class", "parrafo");
-    $parrafo.innerText = item.description;
+    //$parrafo.innerText = item.description;
 
     // <h2>item.name</h2>
     const $titulo = document.createElement("h2");
@@ -31,12 +31,12 @@ export const renderItems = (data) => {
       <img src=item.imageUrl alt=item.name class=img />
       <h2>item.name</h2>
       <p class=parrafo>item.description</p>
-     </li> 
+     </li>
      */
     $tarjeta.appendChild($imagen);
     $tarjeta.appendChild($titulo);
     $tarjeta.appendChild($parrafo);
-    
+
 
     $contenedorTarjetas.appendChild($tarjeta);
   });

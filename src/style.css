@@ -73,7 +73,33 @@ background: #d3d336;
     top: 40px;
     opacity: 1;
   }
-  
+  .ul li .contenedor-div{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   transition: 0.2s;
+   background: #e2ecde;
+   transform-style: preserve-3d;
+   z-index: 10;
+   transform: translate3d(50%,50%,50%);
+  opacity: 1;
+  }
+  .ul li:hover .img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 300px ;
+    transition: 0.2s;
+    z-index: 11;
+    transition: 0.2s;
+    transform-style: prese;
+    transform: translate3d(-50%,-50%,0px) rotate (-15deg);
+    
+
+  }
 
 
 

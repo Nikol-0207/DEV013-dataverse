@@ -22,6 +22,9 @@ export const renderItems = (data) => {
     $parrafo.setAttribute("class", "parrafo");
     //$parrafo.innerText = item.description;
 
+    //creacion de div
+    const $contenedordiv = document.createElement("div");
+    $contenedordiv.setAttribute("class","contenedor-div");
     // <h2>item.name</h2>
     const $titulo = document.createElement("h2");
     $titulo.innerText = item.name;
@@ -36,7 +39,7 @@ export const renderItems = (data) => {
     $tarjeta.appendChild($imagen);
     $tarjeta.appendChild($titulo);
     $tarjeta.appendChild($parrafo);
-
+    $tarjeta.appendChild($contenedordiv);
 
     $contenedorTarjetas.appendChild($tarjeta);
   });

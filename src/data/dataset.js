@@ -5,7 +5,7 @@ export default [
     description:
       "Color TV-Game fue la primera consola de videojuegos doméstica de Nintendo y se comercializó exclusivamente en Japón. Esta consola incluía una serie de videojuegos almacenados en su memoria interna ya que aún no existían los cartuchos intercambiables.",
     imageUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Nintendo-Color-TV-Game-Blockbreaker-FL.jpg/1024px-Nintendo-Color-TV-Game-Blockbreaker-FL.jpg",
+      "/src/data/img/colort.png",
     tipo: "Consola de sobremesa",
     PrecioDeLanzamiento: "$199 USD",
     JuegoMásPopular: "Variaciones del Pong",
@@ -43,20 +43,6 @@ export default [
   },
   {
     id: 4,
-    name: "NES-101",
-    description:
-      "es la cuarta videoconsola de sobremesa producida por Nintendo, desarrollada para suceder a la Super Nintendo. Fue la primera consola concebida para dar el salto del 2D al 3D. Compitió en el mercado de la quinta generación con Saturn de Sega y PlayStation de Sony.",
-    imageUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/e/e0/NES-101-Console-Set.jpg",
-    tipo: "Consola de sobremesa",
-    PrecioDeLanzamiento: "$49.99",
-    JuegoMásPopular: "Super Mario Bros",
-    DuraciónEnElMercado: "6 años",
-    generation: "Cuarta Generación",
-    numberGeneration: 4,
-  },
-  {
-    id: 5,
     name: "Family Computer (Famicom)",
     description:
       "es la cuarta videoconsola de sobremesa producida por Nintendo, desarrollada para suceder a la Super Nintendo. Fue la primera consola concebida para dar el salto del 2D al 3D. Compitió en el mercado de la quinta generación con Saturn de Sega y PlayStation de Sony.",
@@ -70,11 +56,11 @@ export default [
     numberGeneration: 3,
   },
   {
-    id: 6,
+    id: 5,
     name: "Game Boy",
     description: "",
     imageUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Game-Boy-FL.jpg/250px-Game-Boy-FL.jpg",
+      "/src/data/img/Game-Boy.png",
     tipo: "Consola portátil",
     PrecioDeLanzamiento: "$199 USD",
     JuegoMásPopular: "Tetris",
@@ -83,7 +69,7 @@ export default [
     numberGeneration: 4,
   },
   {
-    id: 7,
+    id: 6,
     name: "Super Nintendo Entertainment System (SNES) (1990-2003)",
     description: ".",
     imageUrl:
@@ -96,8 +82,8 @@ export default [
     numberGeneration: 4,
   },
   {
-    id: 8,
-    name: "Virtual Boy (1995-1996)",
+    id: 7,
+    name: "Virtual Boy",
     description: "",
     imageUrl:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Virtual-Boy-Set.png/800px-Virtual-Boy-Set.png",
@@ -109,8 +95,8 @@ export default [
     numberGeneration: 5,
   },
   {
-    id: 9,
-    name: "Nintendo 64 (1996-2003)",
+    id: 8,
+    name: "Nintendo 64",
     description: ".",
     imageUrl:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/N64-Console-Set.png/1280px-N64-Console-Set.png",
@@ -122,11 +108,11 @@ export default [
     numberGeneration: 5,
   },
   {
-    id: 10,
-    name: "Game Boy Light (1998-????)",
+    id: 9,
+    name: "Game Boy Light",
     description: ".",
     imageUrl:
-      "https://infoconsolas.com/wp-content/uploads/2022/07/Game-Boy-Light-portada.jpg",
+      "/src/data/img/Game-Boy-Lightpng.png",
     tipo: " Consola portátil",
     PrecioDeLanzamiento: " $6,800 ¥",
     JuegoMásPopular: " Igual al Game Boy",
@@ -134,22 +120,10 @@ export default [
     generation: "Cuarta (Variante del Game Boy)",
     numberGeneration: 4,
   },
+
   {
-    id: 11,
-    name: "Game Boy Color (1998-2004)",
-    description: ".",
-    imageUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Nintendo-Game-Boy-Color-FL.jpg/800px-Nintendo-Game-Boy-Color-FL.jpg",
-    tipo: " Consola portátil",
-    PrecioDeLanzamiento: " $69.99 USD",
-    JuegoMásPopular: " Pokémon Gold y Silver",
-    DuraciónEnElMercado: "6 años",
-    generation: "Quinta Generacion",
-    numberGeneration: 5,
-  },
-  {
-    id: 12,
-    name: "Nintendo GameCube (2001-2008)",
+    id: 10,
+    name: "Nintendo GameCube",
     description: ".",
     imageUrl:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/GameCube-Console-Set.png/1024px-GameCube-Console-Set.png",
@@ -161,11 +135,11 @@ export default [
     numberGeneration: 6,
   },
   {
-    id: 13,
+    id: 11,
     name: "Game Boy Advance",
     description: ".",
     imageUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Nintendo-Game-Boy-Advance-Purple-FL.jpg/1024px-Nintendo-Game-Boy-Advance-Purple-FL.jpg",
+      "/src/data/img/Nintendo-Game-Boy-Advance.png",
     tipo: "Consola portátil",
     PrecioDeLanzamiento: "$99.99 USD",
     JuegoMásPopular: "Pokémon Ruby y Sapphire",
@@ -173,21 +147,9 @@ export default [
     generation: "Sexta Generacion",
     numberGeneration: 6,
   },
+
   {
-    id: 14,
-    name: "Game Boy Advance SP",
-    description: ".",
-    imageUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Gameboy-Advance-SP-Mk2.jpg/800px-Gameboy-Advance-SP-Mk2.jpg",
-    tipo: "Consola portátil",
-    PrecioDeLanzamiento: " $99.99 USD",
-    JuegoMásPopular: "Pokémon Ruby y Sapphire",
-    DuraciónEnElMercado: "5 años",
-    generation: "Sexta Generacion",
-    numberGeneration: 6,
-  },
-  {
-    id: 15,
+    id: 12,
     name: "Nintendo DS",
     description: ".",
     imageUrl:
@@ -200,11 +162,11 @@ export default [
     numberGeneration: 7,
   },
   {
-    id: 16,
+    id: 13,
     name: "Game Boy Micro",
     description: ".",
     imageUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Game-Boy-Micro.jpg/1024px-Game-Boy-Micro.jpg",
+      "/src/data/img/Game-Boy-Micro.png",
     tipo: "Consola portátil",
     PrecioDeLanzamiento: "$99.99 USD",
     JuegoMásPopular: "Igual al Game Boy Advance",
@@ -213,7 +175,7 @@ export default [
     numberGeneration: 6,
   },
   {
-    id: 17,
+    id: 14,
     name: "Nintendo DS Lite",
     description: ".",
     imageUrl:
@@ -226,7 +188,7 @@ export default [
     numberGeneration: 6,
   },
   {
-    id: 18,
+    id: 15,
     name: "Wii",
     description: ".",
     imageUrl:
@@ -239,24 +201,11 @@ export default [
     numberGeneration: 7,
   },
   {
-    id: 19,
-    name: "Nintendo DSi (2008-2010)",
+    id: 16,
+    name: "Nintendo DSi XL",
     description: ".",
     imageUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Nintendo-DSi-Bl-Open.jpg/800px-Nintendo-DSi-Bl-Open.jpg",
-    tipo: " Consola portátil de doble pantalla (Rediseño del Nintendo DS) ",
-    PrecioDeLanzamiento: " $169.99 USD",
-    JuegoMásPopular: " Brain Age",
-    DuraciónEnElMercado: "2 años",
-    generation: " Séptima Generacion",
-    numberGeneration: 7,
-  },
-  {
-    id: 20,
-    name: "Nintendo DSi XL (2010-2012)",
-    description: ".",
-    imageUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Nintendo-DSi-XL-Burg.jpg/800px-Nintendo-DSi-XL-Burg.jpg",
+      "/src/data/img/Nintendo-DSi-XL.png",
     tipo: "Consola portátil de doble pantalla (Rediseño del Nintendo DSi",
     PrecioDeLanzamiento: "  $189.99 USD",
     JuegoMásPopular: " Super Smash Bros. Melee",
@@ -264,23 +213,9 @@ export default [
     generation: "Séptima Generacion",
     numberGeneration: 7,
   },
-
   {
-    id: 21,
-    name: "Wii Family Edition (2011-2013",
-    description: ".",
-    imageUrl:
-      "https://www.ubuy.com.tr/productimg/?image=aHR0cHM6Ly9pNS53YWxtYXJ0aW1hZ2VzLmNvbS9zZW8vUmVzdG9yZWQtTmludGVuZG8tV2lpLUNvbnNvbGUtQmx1ZS1SZWZ1cmJpc2hlZF9kZmRlMzBiOS1jODE0LTRlNzktYmRkYy0zOGM0ZGJiNjFmYzcuNjUyNzcwNzIxNmVmZjI1NGQ2NjVmYWJmMzM4NTY0NWQuanBlZw.jpg",
-    tipo: "Consola de sobremesa (Rediseño del Wii)",
-    PrecioDeLanzamiento: " No disponible",
-    JuegoMásPopular: "Igual al Wii ",
-    DuraciónEnElMercado: "2 años",
-    generation: "Séptima Generacion",
-    numberGeneration: 7,
-  },
-  {
-    id: 22,
-    name: "Nintendo 3DS (2011-2013",
+    id: 17,
+    name: "Nintendo 3DS ",
     description: ".",
     imageUrl:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Nintendo-3DS-AquaOpen.png/800px-Nintendo-3DS-AquaOpen.png",
@@ -291,23 +226,12 @@ export default [
     generation: "Octava Generacion",
     numberGeneration: 8,
   },
+
   {
-    id: 23,
-    name: "Nintendo 3DS XL (2012-2014)",
+    id: 18,
+    name: "Wii Mini",
     description: ".",
-    imageUrl: "https://m.media-amazon.com/images/I/81cJFBmx-3L.jpg",
-    tipo: "Consola portátil de doble pantalla (Rediseño del Nintendo DSi",
-    PrecioDeLanzamiento: "$199.99 USD",
-    JuegoMásPopular: "Igual al Nintendo 3DS",
-    DuraciónEnElMercado: "2 años",
-    generation: "Octava Generacion",
-    numberGeneration: 8,
-  },
-  {
-    id: 24,
-    name: "Wii Mini (2012-2017)",
-    description: ".",
-    imageUrl: "https://i.blogs.es/cd910e/wii-mini-1/650_1200.jpg",
+    imageUrl: "/src/data/img/wii_mini-removebg-previe.png",
     tipo: "Consola de sobremesa (Rediseño del Wii)",
     PrecioDeLanzamiento: " $99.99 USD",
     JuegoMásPopular: " Igual al Wii",
@@ -316,7 +240,7 @@ export default [
     numberGeneration: 7,
   },
   {
-    id: 25,
+    id: 19,
     name: "Wii U",
     description: ".",
     imageUrl:
@@ -330,22 +254,10 @@ export default [
     numberGeneration: 8,
   },
   {
-    id: 26,
-    name: "Nintendo 2DS",
-    description: ".",
-    imageUrl: "https://m.media-amazon.com/images/I/91d5V+GNWRL.jpg",
-    tipo: "Consola portátil (Rediseño del 3DS sin 3D)",
-    PrecioDeLanzamiento: "$129.99 USD",
-    JuegoMásPopular: "Igual al Nintendo 3DS",
-    DuraciónEnElMercado: "2 años",
-    generation: "Octava Generacion",
-    numberGeneration: 8,
-  },
-  {
-    id: 27,
+    id: 20,
     name: "New Nintendo 3DS",
     description: ".",
-    imageUrl: "https://m.media-amazon.com/images/I/81HAS0l3vRL.jpg",
+    imageUrl: "/src/data/img/new_nintendo_3ds-.png",
     tipo: "Consola portátil (Rediseño del 3DS con mejor hardware)",
     PrecioDeLanzamiento: "$179.99 USD",
     JuegoMásPopular: "Super Smash Bros. for Nintendo 3DS",
@@ -354,49 +266,11 @@ export default [
     numberGeneration: 8,
   },
   {
-    id: 28,
-    name: "Nintendo Classic Mini: NES",
+    id: 21,
+    name: "Nintendo Classic Mini: Super NES",
     description: ".",
     imageUrl:
-      "https://fs-prod-cdn.nintendo-europe.com/media/images/08_content_images/news_5/2016_1/november_6/CI_NintendoClassicMiniNES_Hardware_image950w.jpg",
-    tipo: "Consola de sobremesa (Rediseño del Wii)",
-    PrecioDeLanzamiento: "$59.99 USD",
-    JuegoMásPopular: "Variedad de juegos NES clásicos",
-    DuraciónEnElMercado: "Edición limitada",
-    generation: "Reedición",
-    numberGeneration: 0,
-  },
-  {
-    id: 29,
-    name: "New Nintendo 3DS XL",
-    description: ".",
-    imageUrl:
-      "https://m.media-amazon.com/images/I/519JCqnt5pL._AC_UF1000,1000_QL80_.jpg",
-    tipo: "Consola portátil (Rediseño del New 3DS con pantalla más grande)",
-    PrecioDeLanzamiento: "$199.99 USD",
-    JuegoMásPopular: "Igual al New Nintendo 3DS",
-    DuraciónEnElMercado: "2 años",
-    generation: "Octava Generacion",
-    numberGeneration: 8,
-  },
-  {
-    id: 30,
-    name: "New Nintendo 2DS XL (2017-2019)",
-    description: ".",
-    imageUrl: "https://www.nintendo.hu/new2dsxl/img/hero_img.png",
-    tipo: " Consola portátil (Rediseño del 2DS con hardware mejorado)",
-    PrecioDeLanzamiento: " $149.99 USD",
-    JuegoMásPopular: "Igual al Nintendo 2DS",
-    DuraciónEnElMercado: "  2 años",
-    generation: "Séptima Generacion",
-    numberGeneration: 7,
-  },
-  {
-    id: 31,
-    name: "Nintendo Classic Mini: Super NES (2017)",
-    description: ".",
-    imageUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Nintendo_Classic_Mini_Super_Nintendo_Entertainment_System_%28enhanced_image%29.jpg/800px-Nintendo_Classic_Mini_Super_Nintendo_Entertainment_System_%28enhanced_image%29.jpg",
+      "/src/data/img/Nintendo_Classic_Mini_Super.png",
     tipo: "Consola de sobremesa (Reedición de SNES con juegos preinstalados)",
     PrecioDeLanzamiento: " $79.99 USD",
     JuegoMásPopular: "Variedad de juegos SNES clásicos",
@@ -405,8 +279,8 @@ export default [
     numberGeneration: 7,
   },
   {
-    id: 32,
-    name: "Nintendo Switch (2017-actualidad)",
+    id: 22,
+    name: "Nintendo Switch",
     description: ".",
     imageUrl:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Nintendo_Switch_Console.png/1280px-Nintendo_Switch_Console.png",
@@ -418,8 +292,8 @@ export default [
     numberGeneration: 8,
   },
   {
-    id: 33,
-    name: "Nintendo Switch Lite (2019-actualidad)",
+    id: 23,
+    name: "Nintendo Switch Lite",
     description: ".",
     imageUrl:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Nintendo_Switch_Lite_representation.png/1280px-Nintendo_Switch_Lite_representation.png",
@@ -431,11 +305,11 @@ export default [
     numberGeneration: 7,
   },
   {
-    id: 34,
-    name: "Nintendo Switch OLED (2021-actualidad)",
+    id: 24,
+    name: "Nintendo Switch OLED",
     description: ".",
     imageUrl:
-      "https://mayorintec.com/wp-content/uploads/2022/10/nintendo-switch-oled.jpg",
+      "/src/data/img/nintendo-switch-oled-.png",
     tipo: "Consola híbrida (portátil y de sobremesa)",
     PrecioDeLanzamiento: "  $349.99 USD",
     JuegoMásPopular:

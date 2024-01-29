@@ -17,7 +17,7 @@
             <button id="searchName">Buscar</button>
           </div>
           <div>
-            <select name="select" id="mySelect">
+            <select name="select" id="mySelect" data-testid="select-sort">
               <option value="" disabled selected>Filtrar por generación</option>
               <option value="1">Primera Generación</option>
               <option value="2">Segunda Generación</option>
@@ -38,5 +38,12 @@
       </section>
     </main>
     <script src="main.js" type="module"></script>
+    <script src="vanilla-tilt.min.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll("li"), {
+		  max: 25,
+	  	speed: 400
+    });
+    </script>
   </body>
 </html>

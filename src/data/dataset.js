@@ -70,7 +70,7 @@ export default [
   },
   {
     id: 6,
-    name: "Super Nintendo Entertainment System (SNES) (1990-2003)",
+    name: "Super Nintendo Entertainment System (SNES)",
     description: ".",
     imageUrl:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nintendo-Super-Famicom-Set-FL.png/1280px-Nintendo-Super-Famicom-Set-FL.png",

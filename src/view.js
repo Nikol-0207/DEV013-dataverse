@@ -58,7 +58,15 @@ https://css-tricks.com/bem-101/
 
   data.forEach((item) => {
     const $tarjeta = document.createElement("li");
-
+    $tarjeta.setAttribute("id",`li-${item.id}` );
+    const lookContent = function(){ debugger
+    const selector = this.getAttribute('data-id');
+    const $tarjeta = document.getElementById(selector);
+    if (!$tarjeta){
+      return ;
+    }
+    $tarjeta.classList.add('card--back-face');
+    }
     $tarjeta.innerHTML=`
       <section class="card-front">
         <header class="card-front__header">
@@ -72,7 +80,7 @@ https://css-tricks.com/bem-101/
           <h2 data-itemprop="name"> ${item.name} </h2>
 
         </main>
-        <footer class="card-front__footer">
+        <footer class="card-front__footer" onclick="(${lookContent.toString()})" data-id="li-${item.id}">
           <figure class="card-front__footer-image">
           <img src="${item.imageUrl}" alt  data-itemprop="imageUrl"  />
           </figure>

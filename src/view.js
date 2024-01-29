@@ -62,14 +62,19 @@ https://css-tricks.com/bem-101/
     $tarjeta.innerHTML=`
       <section class="card-front">
         <header class="card-front__header">
+
           <figure class="card-front__header-image">
             <img src="${item.imageUrl}" alt  data-itemprop="imageUrl"  />
           </figure>
-          <h2></h2>
+
         </header>
+        <main class="card-front__content">
+          <h2 data-itemprop="name"> ${item.name} </h2>
+
+        </main>
         <footer class="card-front__footer">
           <figure class="card-front__footer-image">
-            <img src alt />
+          <img src="${item.imageUrl}" alt  data-itemprop="imageUrl"  />
           </figure>
         </footer>
       </section>

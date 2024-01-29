@@ -1,26 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
 
-*
-{
-margin: 0;
-padding: 0;
-font-family: 'Oswald', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
 }
-body{
+body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   margin: 0; /* Elimina el margen predeterminado del cuerpo */
   padding-top: 60px; /* Ajusta según la altura de tu header */
 }
+ul {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 li {
   list-style: none;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 700ms;
+  perspective: 600px;
+  width: 400px;
+  min-height: 500px;
+
+}
+.card-front {
+  border: 1px solid #0a0a0acc;
+  border-radius: 8;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+  backface-visibility: hidden; /*oculta la cara de atrás*/
+  height: 100%;
+  width: 100%;
+}
+.card-front__header {
+  margin-bottom: 20px;
+
+}
+.card-front__header-image img {
+  max-width: 100%;
+  height: 250px;
+  width: auto;
+  transition: all 300ms;
+}
+.card-front h2 {
+  font-size: 1.5em;
+}
+.card-front__content h2{
+  transition: all 300ms;
+}
+.card-front__footer{
+  position: relative;
+}
+.card-front__footer-image{
+  background: #0a0a0acc;
+  border-radius: 50%;
+ width: 200px;
+ height: 200px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ position: absolute;
+ right: -15px;
+ transition: all 300ms; /*rango de ms 100-500*/
+ transform-origin: center center;
+ transform: scale(0.5);
+ cursor: pointer;
+}
+.card-front__footer-image img {
+  width: 110%;
+  transition: all 300ms;
+  transform-origin: center center;
+  transform: scale(0);
+  filter: drop-shadow(0 0 4px);
+  transition-delay: 50ms;
+}
+
+.card-front:hover :is(.card-front__footer-image, img){ /*is aplica los estilos a más de un elemento al mismo tiempo*/
+ transform: scale(1);
 
 }
 
+.card-front:hover .card-front__header img {
+ transform: scale(0);
 
+}
 
+.card-front:hover .card-front__content h2{
+ transform: scale(1.3) translateY(-100px);
+ color: blueviolet;
+}
+.card-back__header h2 {
+  font-size: 1.5em;
+}
+.card-back {
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotateY(180deg);
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+.card--back-face {
+ transform: rotate(-180deg);
+ 
+}
 

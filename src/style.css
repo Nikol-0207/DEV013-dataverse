@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
 *
 {
 margin: 0;
 padding: 0;
-font-family: 'Poppins', sans-serif;
+font-family: 'Oswald', sans-serif;
 }
 body{
   display: flex;
@@ -13,93 +15,12 @@ body{
   margin: 0; /* Elimina el margen predeterminado del cuerpo */
   padding-top: 60px; /* Ajusta según la altura de tu header */
 }
-.ul {
-  display: flex;
-  flex-wrap: wrap;
-  background: #5ad625;
-}
+
 li {
   list-style: none;
 
 }
 
-.ul li .img {
-  height: auto;
-  max-width: 100%;
-  max-height: 80%; /* Puedes ajustar la altura máxima según tus necesidades */
-  display: block;
-  margin: auto; /* Centra la imagen horizontalmente dentro del li */
-}
-
-.ul{
-position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-width: 1200px;
-transform-style: preserve-3d;
-background: #d3d336;
-}
-.ul li{
-  position: relative;
-  width: 300px;
-  height: 400px;
-  margin: 40px;
-  background: rgb(83, 62, 62);
-  border-radius: 20px;
-  transform-style: preserve-3d;
-}
-
-#root li .img {
-  max-width: 100%; /* Ajusta según tus necesidades */
-  max-height: 80%; /* Ajusta según tus necesidades */
-}
-.ul li::before{
-  content: 'Nintendo';
-  top: 20px;
-  left: 20px;
-  font-size: 3em;
-  font-weight: 600;
-  color: aliceblue;
-  font-style: italic;
-  opacity: 0;
-  transition: 0.2s;
-  }
-  .ul li:hover::before{
-  opacity: 0.04;
-  }
-  .ul li:hover .name{
-    top: 40px;
-    opacity: 1;
-  }
-  .ul li .contenedor-div{
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   width: 200px;
-   height: 200px;
-   border-radius: 50%;
-   transition: 0.2s;
-   background: #e2ecde;
-   transform-style: preserve-3d;
-   z-index: 10;
-   transform: translate3d(50%,50%,50%);
-  opacity: 1;
-  }
-  .ul li:hover .img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    max-width: 300px ;
-    transition: 0.2s;
-    z-index: 11;
-    transition: 0.2s;
-    transform-style: prese;
-    transform: translate3d(-50%,-50%,0px) rotate (-15deg);
-    
-
-  }
 
 
 

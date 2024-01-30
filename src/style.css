@@ -8,6 +8,7 @@
   font-family: "Silkscreen", sans-serif;
 }
 body {
+  background: hsl(355, 100%, 35%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,17 +17,82 @@ body {
   margin: 0; /* Elimina el margen predeterminado del cuerpo */
   padding-top: 60px; /* Ajusta según la altura de tu header */
 }
-ul {
+
+:is(.header, .card-front, .card-back) {
+
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.2px);
+  -webkit-backdrop-filter: blur(8.2px);
+  border: 1px solid rgba(255, 255, 255, 0.82);
+}
+
+.header {
+  margin-inline: 200px;
+  padding: 1rem;
+}
+
+#iconos {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  transform: translate(-50%);
+  transform-origin: center center;
+}
+
+.iconos {
+  list-style: none;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  aling-items:center;
+  transform: rotate(-20deg);
+}
+
+
+
+
+.iconos li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  aling-items:center;
+}
+
+.iconos li i {
+  font-size: 3rem;
+  color: white;
+  margin: .3rem;
+  display: block;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.iconos li i:hover {
+  color: var(--color);
+  transition: all 100ms;
+  text-shadow: 0px 0px 120px var(--color), 0px 0px 60px var(--color), 0px 0px 30px white, 0px 0px 10px white;
+}
+
+.container-item {
   display: flex;
   gap: 50px;
   flex-wrap: wrap;
   justify-content: center;
+  margin-inline: 100px;
 }
+/*<i class="fi fi-ss-gamepad"></i>
+<i class="fi fi-ss-bomb"></i>*
+<i class="fi fi-ss-joystick"></i>      
+<i class="fi fi-sr-treasure-chest"></i>     
+<i class="fi fi-sr-dice-d12"></i>  
+<i class="fi fi-ss-dice-d6"></i> */
 
 .titulo {
   font-size: 50px;
 }
-li {
+.container-item li {
   list-style: none;
   position: relative;
   transform-style: preserve-3d;
@@ -36,7 +102,7 @@ li {
   min-height: 500px;
 }
 .card-front {
-  border: 1px solid #0a0a0acc;
+  z-index: 0;
   border-radius: 8;
   padding: 10px;
   text-align: center;
@@ -44,6 +110,7 @@ li {
   backface-visibility: hidden; /*oculta la cara de atrás*/
   height: 100%;
   width: 100%;
+  border-radius: 25px;
 }
 .card-front__header {
   margin-bottom: 20px;
@@ -62,6 +129,7 @@ li {
 }
 .card-front__footer {
   position: relative;
+  transform: translateZ(5px);
 }
 .card-front__footer-image {
   background: #0a0a0acc;
@@ -77,6 +145,7 @@ li {
   transform-origin: center center;
   transform: scale(0.5);
   cursor: pointer;
+  z-index: 1;
 }
 .card-front__footer-image img {
   width: 110%;
@@ -114,7 +183,9 @@ li {
   height: 100%;
   width: 100%;
   backface-visibility: hidden;
+  border-radius: 25px;
 }
+
 .card--back-face {
   transform: rotateY(-180deg);
 }

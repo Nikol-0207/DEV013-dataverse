@@ -1,11 +1,12 @@
 import { example } from "./dataFunctions.js";
-import { renderItems } from "./view.js";
+import { renderItems, renderBackground } from "./view.js";
 
 import data from "./data/dataset.js";
 
 console.log("aqui main" + example, renderItems(data), data);
 
 const $selection = document.getElementById("mySelect");
+const $iconos = document.getElementById("iconos");
 //const searchName = document.getElementById('searchName');
 const $buscador = document.getElementById("buscador");
 const $botonBuscar = document.getElementById("searchName");
@@ -16,6 +17,9 @@ const actualizarTarjetas = (data) => {
   $contenedorTarjetas.remove();
   $contenedor.appendChild(renderItems(data));
 };
+
+$iconos.appendChild(renderBackground())
+
 
 actualizarTarjetas(data);
 

@@ -3,21 +3,35 @@
   <head>
     <meta charset="utf-8" />
     <title>Data Lovers</title>
-    <link rel="icon" href="/src/data/img/planta-carnivora.png" type="image/png">
+    <link
+      rel="icon"
+      href="/src/data/img/planta-carnivora.png"
+      type="image/png"
+    />
     <link rel="stylesheet" href="style.css" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
   </head>
 
   <body>
+    <aside id="iconos"> 
+      
+    </aside>
     <header>
-      <section>
-     <h1 class="titulo">CONSOLAS NINTENDO</h1>
-       <article>HISTORIA DE LAS CONSOLAS NINTENDO</article>
-          <article>
-           Nintendo Company, Ltd. es una empresa de entretenimiento dedicada a la investigación, desarrollo y distribución de software y hardware de videojuegos, y juegos de cartas, con sede en Kioto, Japón.
-         Sus productos incluyen algunas de las consolas y títulos más influyentes y exitosos en la industria de los videojuegos, como la Nintendo Entertainment System, la Super Nintendo Entertainment System,la Wii y la Game Boy.
-          </article>
-       </section>
-     </header>
+      <section class="header">
+        <h1 class="header__titulo">CONSOLAS NINTENDO</h1>
+        <article class="header__subtitulo">HISTORIA DE LAS CONSOLAS NINTENDO</article>
+        <p class="header__description">
+          Nintendo Company, Ltd. es una empresa de entretenimiento dedicada a la
+          investigación, desarrollo y distribución de software y hardware de
+          videojuegos, y juegos de cartas, con sede en Kioto, Japón. Sus
+          productos incluyen algunas de las consolas y títulos más influyentes y
+          exitosos en la industria de los videojuegos, como la Nintendo
+          Entertainment System, la Super Nintendo Entertainment System,la Wii y
+          la Game Boy.
+        </p>
+      </section>
+    </header>
     <main>
       <section class="card">
         <div class="box-select">
@@ -39,20 +53,18 @@
             </select>
           </div>
         </div>
-      <div id="root">
-        <ul class="ul">
-
-        </ul>
-      </div>
+        <div id="root">
+          <ul class="ul"></ul>
+        </div>
       </section>
     </main>
     <script src="main.js" type="module"></script>
     <script src="vanilla-tilt.min.js"></script>
     <script>
       VanillaTilt.init(document.querySelectorAll("li"), {
-		  max: 25,
-	  	speed: 400
-    });
+        max: 25,
+        speed: 400,
+      });
     </script>
   </body>
 </html>

@@ -5,53 +5,11 @@
  * @author wendy nicol
  */
 export const renderItems = (data) => {
-  /*
-BEM
-block
-element
-modificador
-
-https://css-tricks.com/bem-101/
 
 
-<li>
-  <section class="card-front">
-    <header class="card-front__header">
-      <figure class="card-front__header-image">
-        <img src alt />
-      </figure>
-      <h2></h2>
-    </header>
-    <footer class="card-front__footer">
-      <figure class="card-front__footer-image">
-        <img src alt />
-      </figure>
-    </footer>
-  </section>
-  <section class="card-back">
-    <header class="card-back__header">
-      <h2 data-itemprop="name" ></h2>
-    </header>
-    <main class="card-back__content">
-      <dl itemscope itemtype="consoles" class="card-back__details-list">
-        <dt class="card-back__details-title">Descripción:</dt><dd >Pionera de la informática, fue la primera programadora.</dd>
-        <dt class="card-back__details-title">Tipo de consola:</dt><dd itemprop="tipo">1843</dd>
-        <dt>Precio de lanzamiento:</dt><dd itemprop="PrecioDeLanzamiento">London, England</dd>
-        <dt>Duración en el mercado:</dt><dd itemprop="DuraciónEnElMercado">Computer Science</dd>
-        <dt>Generacion:</dt><dd itemprop="generation">Computer Science</dd>
-      </dl>
-    </main>
-    <footer class="card-back__footer">
-      <figure class="card-back__footer-image">
-        <img src alt data-itemprop="imageUrl" />
-        <span data-itemprop="JuegoMásPopular" >Super Mario 64</span>
-      </figure>
-    </footer>
-  </section>
-</li>
-*/
+ 
   const $contenedorTarjetas = document.createElement("ul");
-  $contenedorTarjetas.setAttribute("class", "ul");
+  $contenedorTarjetas.setAttribute("class", "container-item");
 
   data.forEach((item) => {
     const $tarjeta = document.createElement("li");
@@ -127,3 +85,24 @@ https://css-tricks.com/bem-101/
 
   return $contenedorTarjetas;
 };
+
+export const renderBackground = () => {
+  const $contenedorIconos = document.createElement("ul");
+  $contenedorIconos.setAttribute("class", "iconos");
+  $contenedorIconos.innerHTML= Array.from({ length: 50 }, (_, j) => `
+  <li>
+  ${Array.from({ length: 100 }, (_, i) => `
+    <i class="fi fi-ss-gamepad" style="--color: hsl(${(i + j) * 18}, 90%, 50%);"></i>
+    <i class="fi fi-ss-bomb" style="--color:  hsl(${(i + j) * 18}, 90%, 50%);"></i>
+    <i class="fi fi-ss-joystick" style="--color:  hsl(${(i + j) * 18}, 90%, 50%);"></i>
+    <i class="fi fi-sr-treasure-chest" style="--color:  hsl(${(i + j) * 18}, 90%, 50%);"></i>
+    <i class="fi fi-sr-dice-d12" style="--color:  hsl(${(i + j) * 18}, 90%, 50%);"></i>
+    <i class="fi fi-ss-dice-d6" style="--color:  hsl(${(i + j) * 18}, 90%, 50%);"></i>
+  
+  `).join('')
+}
+</li>
+`).join('')
+
+return  $contenedorIconos;
+}

@@ -13,7 +13,7 @@ const $botonBuscar = document.getElementById("searchName");
 const $contenedor = document.getElementById("root");
 
 const actualizarTarjetas = (data) => {
-  const $contenedorTarjetas = document.querySelector(".ul");
+  const $contenedorTarjetas = document.querySelector(".container-item");
   $contenedorTarjetas.remove();
   $contenedor.appendChild(renderItems(data));
 };

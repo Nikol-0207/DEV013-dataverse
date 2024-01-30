@@ -5,7 +5,7 @@ export default [
     description:
       "Color TV-Game fue la primera consola de videojuegos doméstica de Nintendo y se comercializó exclusivamente en Japón. Esta consola incluía una serie de videojuegos almacenados en su memoria interna ya que aún no existían los cartuchos intercambiables.",
     imageUrl:
-      "/src/data/img/colort.png",
+      "/data/img/colort.png",
     tipo: "Consola de sobremesa",
     PrecioDeLanzamiento: "$199 USD",
     JuegoMásPopular: "Variaciones del Pong",
@@ -60,7 +60,7 @@ export default [
     name: "Game Boy",
     description: "",
     imageUrl:
-      "/src/data/img/Game-Boy.png",
+      "/data/img/Game-Boy.png",
     tipo: "Consola portátil",
     PrecioDeLanzamiento: "$199 USD",
     JuegoMásPopular: "Tetris",
@@ -112,7 +112,7 @@ export default [
     name: "Game Boy Light",
     description: ".",
     imageUrl:
-      "/src/data/img/Game-Boy-Lightpng.png",
+      "/data/img/Game-Boy-Lightpng.png",
     tipo: " Consola portátil",
     PrecioDeLanzamiento: " $6,800 ¥",
     JuegoMásPopular: " Igual al Game Boy",
@@ -139,7 +139,7 @@ export default [
     name: "Game Boy Advance",
     description: ".",
     imageUrl:
-      "/src/data/img/Nintendo-Game-Boy-Advance.png",
+      "/data/img/Nintendo-Game-Boy-Advance.png",
     tipo: "Consola portátil",
     PrecioDeLanzamiento: "$99.99 USD",
     JuegoMásPopular: "Pokémon Ruby y Sapphire",
@@ -166,7 +166,7 @@ export default [
     name: "Game Boy Micro",
     description: ".",
     imageUrl:
-      "/src/data/img/Game-Boy-Micro.png",
+      "/data/img/Game-Boy-Micro.png",
     tipo: "Consola portátil",
     PrecioDeLanzamiento: "$99.99 USD",
     JuegoMásPopular: "Igual al Game Boy Advance",
@@ -205,7 +205,7 @@ export default [
     name: "Nintendo DSi XL",
     description: ".",
     imageUrl:
-      "/src/data/img/Nintendo-DSi-XL.png",
+      "/data/img/Nintendo-DSi-XL.png",
     tipo: "Consola portátil de doble pantalla (Rediseño del Nintendo DSi",
     PrecioDeLanzamiento: "  $189.99 USD",
     JuegoMásPopular: " Super Smash Bros. Melee",
@@ -231,7 +231,7 @@ export default [
     id: 18,
     name: "Wii Mini",
     description: ".",
-    imageUrl: "/src/data/img/wii_mini-removebg-previe.png",
+    imageUrl: "/data/img/wii_mini-removebg-previe.png",
     tipo: "Consola de sobremesa (Rediseño del Wii)",
     PrecioDeLanzamiento: " $99.99 USD",
     JuegoMásPopular: " Igual al Wii",
@@ -257,7 +257,7 @@ export default [
     id: 20,
     name: "New Nintendo 3DS",
     description: ".",
-    imageUrl: "/src/data/img/new_nintendo_3ds-.png",
+    imageUrl: "/data/img/new_nintendo_3ds-.png",
     tipo: "Consola portátil (Rediseño del 3DS con mejor hardware)",
     PrecioDeLanzamiento: "$179.99 USD",
     JuegoMásPopular: "Super Smash Bros. for Nintendo 3DS",
@@ -270,7 +270,7 @@ export default [
     name: "Nintendo Classic Mini: Super NES",
     description: ".",
     imageUrl:
-      "/src/data/img/Nintendo_Classic_Mini_Super.png",
+      "/data/img/Nintendo_Classic_Mini_Super.png",
     tipo: "Consola de sobremesa (Reedición de SNES con juegos preinstalados)",
     PrecioDeLanzamiento: " $79.99 USD",
     JuegoMásPopular: "Variedad de juegos SNES clásicos",
@@ -309,7 +309,7 @@ export default [
     name: "Nintendo Switch OLED",
     description: ".",
     imageUrl:
-      "/src/data/img/nintendo-switch-oled-.png",
+      "/data/img/nintendo-switch-oled-.png",
     tipo: "Consola híbrida (portátil y de sobremesa)",
     PrecioDeLanzamiento: "  $349.99 USD",
     JuegoMásPopular:

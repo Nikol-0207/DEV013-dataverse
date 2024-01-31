@@ -19,6 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+
 }
 .container-item{
   margin-top: 4rem;;
@@ -29,23 +30,53 @@ body {
   box-shadow: 0 4px 30px rgba(6, 251, 255, 0.1);
   backdrop-filter: blur(8.2px);
   -webkit-backdrop-filter: blur(8.2px);
-  border: 30px solid #0098f0;
-  box-sizing: border-box;
-}
+  /* border: 10px solid #0098f0; */
 
+  border: 10px double;
+  box-sizing: border-box;
+
+}
+.header__titulo{
+  justify-content: center;
+  text-align: center;
+  backdrop-filter: blur(1px);
+  font-size: 50pt;
+}
 .header {
-  background: rgb(29, 253, 247);
-  background: linear-gradient(
-    53deg,
-    rgba(29, 253, 247, 1) 0%,
-    rgba(29, 253, 247, 1) 2%,
-    rgba(250, 69, 252, 1) 100%
-  );
+  background: rgb(123,167,232);
+  background: linear-gradient(90deg, rgba(123,167,232,1) 29%, rgba(127,67,199,1) 70%, rgba(32,14,74,1) 100%);
   padding: 1rem;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(1px);
+  font-size: 15pt;
 }
 .box-select{
-  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+}
+#searchName{
+  width: 150px; /* Ancho del botón */
+  height: 40px; /* Alto del botón */
+  font-size: 25px; /* Tamaño de la letra en el botón (opcional) */
+  backdrop-filter: blur(1px);
+  margin-left: 15px;
+  /* background-image: url(/src/data/img/buscar.png);
+  background-repeat: no-repeat;
+  background-position: left center; */
+}
+#buscador{
+  font-size: 25px;
+  backdrop-filter: blur(1px);
+  width: 350px;
+  height: 40px;
+}
+select{
+  backdrop-filter: blur(1px);
+  margin-left: 20px;
+  display: flex;
+  font-size: 15px;
+
+  width: 350px; /* Ancho del selector */
+  height: 40px; /* Alto del selector */
 }
 
 #iconos {
@@ -98,9 +129,9 @@ body {
 
 /*<i class="fi fi-ss-gamepad"></i>
 <i class="fi fi-ss-bomb"></i>*
-<i class="fi fi-ss-joystick"></i>      
-<i class="fi fi-sr-treasure-chest"></i>     
-<i class="fi fi-sr-dice-d12"></i>  
+<i class="fi fi-ss-joystick"></i>
+<i class="fi fi-sr-treasure-chest"></i>
+<i class="fi fi-sr-dice-d12"></i>
 <i class="fi fi-ss-dice-d6"></i> */
 
 .titulo {

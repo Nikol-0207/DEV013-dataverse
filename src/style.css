@@ -1,25 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Silkscreen", sans-serif;
+
 }
 
 body {
-  background: rgb(2, 14, 101);
-  background: linear-gradient(
-    99deg,
-    rgba(2, 14, 101, 1) 20%,
-    rgba(132, 3, 138, 0.9780287114845938) 100%
-  );
+ /*  background: rgb(59,73,198);
+background: linear-gradient(90deg, rgba(59,73,198,1) 0%, rgba(226,20,34,1) 100%); */
+background: #ffff;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-
 }
 .container-item{
   margin-top: 4rem;;
@@ -30,51 +30,66 @@ body {
   box-shadow: 0 4px 30px rgba(6, 251, 255, 0.1);
   backdrop-filter: blur(8.2px);
   -webkit-backdrop-filter: blur(8.2px);
-  /* border: 10px solid #0098f0; */
-
+  font-family: "Silkscreen", sans-serif;
   border: 10px double;
   box-sizing: border-box;
 
 }
-.header__titulo{
+h1[name="header__titulo"]{
   justify-content: center;
   text-align: center;
   backdrop-filter: blur(1px);
   font-size: 50pt;
+  font-family: 'Black Ops One', system-ui;
 }
 .header {
-  background: rgb(123,167,232);
-  background: linear-gradient(90deg, rgba(123,167,232,1) 29%, rgba(127,67,199,1) 70%, rgba(32,14,74,1) 100%);
+  background: #e10c0c;
+ /*  background: rgb(123,167,232);
+  background: linear-gradient(90deg, rgba(123,167,232,1) 29%, rgba(127,67,199,1) 70%, rgba(32,14,74,1) 100%); */
   padding: 1rem;
   backdrop-filter: blur(1px);
-  font-size: 15pt;
+  font-size: 20pt;
+  font-family: 'Oswald', sans-serif;
+  border-radius: 10px;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 .box-select{
   display: flex;
   justify-content: center;
 }
 #searchName{
-  width: 150px; /* Ancho del botón */
+  border-radius: 10px;
+  width: 100px; /* Ancho del botón */
   height: 40px; /* Alto del botón */
-  font-size: 25px; /* Tamaño de la letra en el botón (opcional) */
+  font-size: 25px;
   backdrop-filter: blur(1px);
   margin-left: 15px;
-  /* background-image: url(/src/data/img/buscar.png);
-  background-repeat: no-repeat;
-  background-position: left center; */
+  background-color: rgb(151, 199, 219);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+#searchName:hover {
+
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.8);
+
 }
 #buscador{
   font-size: 25px;
   backdrop-filter: blur(1px);
   width: 350px;
   height: 40px;
+  border-radius: 10px;
 }
 select{
   backdrop-filter: blur(1px);
-  margin-left: 20px;
+  margin-left: 100px;
   display: flex;
-  font-size: 15px;
-
+  font-size: 20px;
+  border-radius: 15px;
   width: 350px; /* Ancho del selector */
   height: 40px; /* Alto del selector */
 }
@@ -125,6 +140,9 @@ select{
   flex-wrap: wrap;
   justify-content: center;
   margin-inline: 100px;
+  background: #e10c0c;
+  border-radius: 20px;
+  margin-bottom: 100px
 }
 
 /*<i class="fi fi-ss-gamepad"></i>
@@ -313,8 +331,10 @@ stilos a más de un elemento al mismo tiempo*/
 }
 
 .card-back {
+  font-family: 'Oswald', sans-serif;
+  font-size: 13.5pt;
   padding: 10px;
-  text-align: center;
+  text-align: justify;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
   position: absolute;
   left: 0;

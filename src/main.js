@@ -1,9 +1,9 @@
-import { example } from "./dataFunctions.js";
+//import { example } from "./dataFunctions.js";
 import { renderItems, renderBackground } from "./view.js";
 
 import data from "./data/dataset.js";
 
-console.log("aqui main" + example, renderItems(data), data);
+//console.log("aqui main" + example, renderItems(data), data);
 
 const $selection = document.getElementById("mySelect");
 const $iconos = document.getElementById("iconos");
@@ -42,10 +42,7 @@ $botonBuscar.addEventListener("click", () => {
 
   // Filtra los elementos que contienen el término de búsqueda en el nombre
   const filteredData = data.filter((item) =>
-    item.name
-      .replaceAll(" ", "")
-      .toLowerCase()
-      .includes(searchTerm.replaceAll(" ", "").toLowerCase())
+    item.name.replaceAll(" ", "").toLowerCase().includes(searchTerm.replaceAll(" ", "").toLowerCase())
   );
 
   if (filteredData.length > 0) {

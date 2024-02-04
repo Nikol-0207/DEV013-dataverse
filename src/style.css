@@ -77,6 +77,9 @@ h1[name="header__titulo"]{
   box-shadow: 0 0 10px rgba(52, 152, 219, 0.8);
 
 }
+label[for="buscador"] {
+  font-size: 35px;
+}
 #buscador{
   font-size: 25px;
   backdrop-filter: blur(1px);
@@ -84,14 +87,41 @@ h1[name="header__titulo"]{
   height: 40px;
   border-radius: 10px;
 }
-select{
+select[name="select"]{
   backdrop-filter: blur(1px);
   margin-left: 100px;
   display: flex;
   font-size: 20px;
   border-radius: 15px;
-  width: 350px; /* Ancho del selector */
+  width: 250px; /* Ancho del selector */
   height: 40px; /* Alto del selector */
+}
+select[name="sort-order"]{
+  backdrop-filter: blur(1px);
+  display: flex;
+  font-size: 20px;
+  border-radius: 15px;
+  margin-left: 10px;
+  width: 150px;
+  height: 40px;
+}
+select[name="type-order"]{
+  backdrop-filter: blur(1px);
+  display: flex;
+  font-size: 20px;
+  border-radius: 15px;
+  margin-left: 10px;
+  width: 340px;
+  height: 40px;
+}
+.select {
+  display: flex;
+  align-items: center;
+}
+.li_sta{
+display: flex;
+margin-top: 50px;
+margin-bottom: 50px;
 }
 
 #iconos {

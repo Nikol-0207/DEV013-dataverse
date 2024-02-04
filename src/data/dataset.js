@@ -12,6 +12,7 @@ export default [
     DuraciónEnElMercado: "6 años",
     generation: "Primera Generación",
     numberGeneration: 1,
+    numberType: 11,
   },
   {
     id: 2,
@@ -26,6 +27,7 @@ export default [
     DuraciónEnElMercado: "15 años",
     generation: "Segunda Generación",
     numberGeneration: 2,
+    numberType: 7,
   },
   {
     id: 3,
@@ -40,6 +42,7 @@ export default [
     JuegoMásPopular: "Super Mario Bros",
     generation: "Tercera Generación",
     numberGeneration: 3,
+    numberType: 11,
   },
   {
     id: 4,
@@ -54,6 +57,7 @@ export default [
     DuraciónEnElMercado: "20 años",
     generation: "Tercera Generación",
     numberGeneration: 3,
+    numberType: 11,
   },
   {
     id: 5,
@@ -67,6 +71,7 @@ export default [
     DuraciónEnElMercado: "9 años",
     generation: "Cuarta Generación",
     numberGeneration: 4,
+    numberType: 7,
   },
   {
     id: 6,
@@ -80,6 +85,7 @@ export default [
     DuraciónEnElMercado: "13 años",
     generation: "Cuarta Generacion",
     numberGeneration: 4,
+    numberType: 11,
   },
   {
     id: 7,
@@ -93,6 +99,7 @@ export default [
     DuraciónEnElMercado: "1 año",
     generation: "Quinta Generación",
     numberGeneration: 5,
+    numberType: 11,
   },
   {
     id: 8,
@@ -106,6 +113,7 @@ export default [
     DuraciónEnElMercado: "7 años",
     generation: "Quinta Generacion",
     numberGeneration: 5,
+    numberType: 11,
   },
   {
     id: 9,
@@ -113,12 +121,13 @@ export default [
     description: ".",
     imageUrl:
       "/src/data/img/Game-Boy-Lightpng.png",
-    tipo: " Consola portátil",
+    tipo: "Consola portátil",
     PrecioDeLanzamiento: " $6,800 ¥",
     JuegoMásPopular: " Igual al Game Boy",
     DuraciónEnElMercado: "Desconocida",
     generation: "Cuarta (Variante del Game Boy)",
     numberGeneration: 4,
+    numberType: 7,
   },
 
   {
@@ -127,12 +136,13 @@ export default [
     description: ".",
     imageUrl:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/GameCube-Console-Set.png/1024px-GameCube-Console-Set.png",
-    tipo: " Consola de sobremesa",
+    tipo: "Consola de sobremesa",
     PrecioDeLanzamiento: " $199.99 USD",
-    JuegoMásPopular: " Super Smash Bros. Melee",
+    JuegoMásPopular: "Super Smash Bros. Melee",
     DuraciónEnElMercado: "7 años",
     generation: "Sexta Generacion",
     numberGeneration: 6,
+    numberType: 11,
   },
   {
     id: 11,
@@ -146,6 +156,7 @@ export default [
     DuraciónEnElMercado: "7 años",
     generation: "Sexta Generacion",
     numberGeneration: 6,
+    numberType: 7,
   },
 
   {
@@ -160,6 +171,7 @@ export default [
     DuraciónEnElMercado: "2 años",
     generation: "Septima Generacion",
     numberGeneration: 7,
+    numberType: 4,
   },
   {
     id: 13,
@@ -173,6 +185,7 @@ export default [
     DuraciónEnElMercado: "7 años",
     generation: "Sexta Generacion",
     numberGeneration: 6,
+    numberType: 7,
   },
   {
     id: 14,
@@ -186,6 +199,7 @@ export default [
     DuraciónEnElMercado: "2 años",
     generation: "Sexta Generacion",
     numberGeneration: 6,
+    numberType: 4,
   },
   {
     id: 15,
@@ -199,6 +213,7 @@ export default [
     DuraciónEnElMercado: "7 años",
     generation: "Septima Generacion",
     numberGeneration: 7,
+    numberType: 11,
   },
   {
     id: 16,
@@ -212,6 +227,7 @@ export default [
     DuraciónEnElMercado: "2 años",
     generation: "Séptima Generacion",
     numberGeneration: 7,
+    numberType: 4,
   },
   {
     id: 17,
@@ -219,12 +235,13 @@ export default [
     description: ".",
     imageUrl:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Nintendo-3DS-AquaOpen.png/800px-Nintendo-3DS-AquaOpen.png",
-    tipo: " Consola portátil de doble pantalla (3D)    ",
+    tipo: "Consola portátil de doble pantalla (3D)    ",
     PrecioDeLanzamiento: "$249.99 USD",
     JuegoMásPopular: "  Mario Kart 7",
     DuraciónEnElMercado: "2 años",
     generation: "Octava Generacion",
     numberGeneration: 8,
+    numberType: 4,
   },
 
   {
@@ -238,6 +255,7 @@ export default [
     DuraciónEnElMercado: " 5 años",
     generation: "Séptima Generacion",
     numberGeneration: 7,
+    numberType: 11,
   },
   {
     id: 19,
@@ -252,6 +270,7 @@ export default [
     DuraciónEnElMercado: "5 años",
     generation: "Octava Generacion",
     numberGeneration: 8,
+    numberType: 11,
   },
   {
     id: 20,
@@ -264,6 +283,7 @@ export default [
     DuraciónEnElMercado: "2 años",
     generation: "Octava Generacion",
     numberGeneration: 8,
+    numberType: 7,
   },
   {
     id: 21,
@@ -276,7 +296,8 @@ export default [
     JuegoMásPopular: "Variedad de juegos SNES clásicos",
     DuraciónEnElMercado: "Edición limitada",
     generation: "Reedición",
-    numberGeneration: 7,
+    numberGeneration: 0,
+    numberType: 11,
   },
   {
     id: 22,
@@ -290,6 +311,7 @@ export default [
     DuraciónEnElMercado: " Desde 2017 hasta la actualidad",
     generation: "Octava Generacion",
     numberGeneration: 8,
+    numberType: 2,
   },
   {
     id: 23,
@@ -303,6 +325,7 @@ export default [
     DuraciónEnElMercado: " Desde 2019 hasta la actualidad",
     generation: "Séptima Generacion",
     numberGeneration: 7,
+    numberType: 7,
   },
   {
     id: 24,
@@ -313,9 +336,10 @@ export default [
     tipo: "Consola híbrida (portátil y de sobremesa)",
     PrecioDeLanzamiento: "  $349.99 USD",
     JuegoMásPopular:
-      "  Similar al de Nintendo Switch y Switch Lite, Mario Kart 8 Deluxe",
-    DuraciónEnElMercado: " Desde 2021 hasta la actualidad",
+      "Similar al de Nintendo Switch y Switch Lite, Mario Kart 8 Deluxe",
+    DuraciónEnElMercado: "Desde 2021 hasta la actualidad",
     generation: "Octava Generacion",
     numberGeneration: 8,
+    numberType: 2,
   },
 ];

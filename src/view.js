@@ -60,14 +60,15 @@ export const renderItems = (data) => {
 }</dd>
             <dt class="card-back__details-title">Generacion:</dt><dd itemprop="generation">${item.generation
 }</dd>
+            <dt class="card-back__details-title">Juego más jugado:</dt><dd itemprop="JuegoMásPopular">${item.JuegoMásPopular
+}</dd>
           </dl>
         </main>
         <footer class="card-back__footer" >
           <figure class="card-back__footer-image">
             <img src alt  data-itemprop="imageUrlGame" />
             <span data-itemprop="JuegoMásPopular" >
-            <dt class="card-back__details-title">Juego más jugado:</dt><dd itemprop="JuegoMásPopular">${item.JuegoMásPopular
-}</dd>
+
             </span>
           </figure>
         </footer>

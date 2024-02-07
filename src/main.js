@@ -67,7 +67,7 @@ $botonBuscar.addEventListener("click", () => {
   const filteredData = data.filter((item) =>
     item.name.replaceAll(" ", "").toLowerCase().includes(searchTerm.replaceAll(" ", "").toLowerCase())
   );
-  /* const auxiliar = prompt('', ''); */
+  
   if (filteredData.length > 0) {
     actualizarTarjetas(filteredData);
   } else {

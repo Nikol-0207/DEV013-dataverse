@@ -32,7 +32,7 @@ describe('Test de data set', () => {
       expect(validKeysCount).toBeGreaterThanOrEqual(minCount);
     });
   });
-  
+
   data.forEach((item) => {
     describe(`*** ${item.name || item.id} ***`, () => {
       it('Debe tener las propiedades requeridas', () => {
@@ -43,19 +43,19 @@ describe('Test de data set', () => {
         expect(item).toHaveProperty('imageUrl');
         expect(item).toHaveProperty('facts');
       });
-    
+
       describe("id", () => {
         it('Debe ser un string', () => {
           expect(typeof item.id).toBe('string');
         });
-    
+
         it('Tiene el formato correcto', () => {
-          expect(/^[a-zA-Z0-9_\-]*$/.test(item.id)).toBe(true);
+          expect(/^[a-zA-Z0-9_-]*$/.test(item.id)).toBe(true);
           expect(item.id.length).toBeGreaterThan(0);
           expect(item.id.length).toBeLessThanOrEqual(32);
         });
       });
-      
+
       describe("name", () => {
         it('Debe ser un string', () => {
           expect(typeof item.name).toBe('string');
@@ -66,42 +66,42 @@ describe('Test de data set', () => {
         it('Debe ser un string', () => {
           expect(typeof item.description).toBe('string');
         });
-      
+
         it('Debe tener maximo 20 palabras', () => {
           const words = item.shortDescription.split(/\s+/).filter(word => word !== '');
           expect(words.length).toBeLessThanOrEqual(20);
         });
       });
-      
-      
+
+
       describe('descripcion', () => {
         it('Debe ser un string', () => {
           expect(typeof item.description).toBe('string');
         });
-      
+
         it('Debe tener entre 80 y 100 palabras', () => {
           const words = item.description.split(/\s+/).filter(word => word !== '');
           expect(words.length).toBeGreaterThanOrEqual(80);
           expect(words.length).toBeLessThanOrEqual(100);
         });
       });
-    
+
       describe("imageUrl", () => {
         it('Debe ser un string', () => {
           expect(typeof item.imageUrl).toBe('string');
         });
-    
+
         it('Debe ser una URL válida', () => {
           const urlRegex = /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([/\w.-]*)*\/?$/;
           expect(urlRegex.test(item.imageUrl)).toBe(true);
         });
       });
-    
+
       describe('facts', () => {
         it('Debe ser un objeto', () => {
           expect(typeof item.facts).toBe('object');
         })
-      
+
         it('Debe tener al menos 3 propiedades', () => {
           expect(Object.keys(item.facts).length).toBeGreaterThanOrEqual(3);
         });
@@ -112,7 +112,7 @@ describe('Test de data set', () => {
             expect(/^([a-z]+)(([A-Z]([a-z]+))+)$/.test(k)).toBe(true);
           });
         });
-      
+
         it('Los valores de todas las propiedades deben tener el formato esperado', () => {
           expect.hasAssertions();
           Object.values(item.facts).forEach((v) => {

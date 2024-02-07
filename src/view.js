@@ -10,6 +10,7 @@ export const renderItems = (data) => {
 
   data.forEach((item) => {
     const $tarjeta = document.createElement("li");
+    $tarjeta.setAttribute("class","li_sta");
     $tarjeta.setAttribute("id", `li-${item.id}`);
     const toggleContent = function () {
       const selector = this.getAttribute("data-id");
@@ -59,13 +60,15 @@ export const renderItems = (data) => {
 }</dd>
             <dt class="card-back__details-title">Generacion:</dt><dd itemprop="generation">${item.generation
 }</dd>
+            <dt class="card-back__details-title">Juego más jugado:</dt><dd itemprop="JuegoMásPopular">${item.JuegoMásPopular
+}</dd>
           </dl>
         </main>
         <footer class="card-back__footer" >
           <figure class="card-back__footer-image">
             <img src alt  data-itemprop="imageUrlGame" />
             <span data-itemprop="JuegoMásPopular" >
-            ${item.JuegoMásPopular}
+
             </span>
           </figure>
         </footer>
@@ -101,7 +104,7 @@ export const renderBackground = () => {
 }, 90%, 50%);"></i>
     <i class="fi fi-rr-dice-d6" style="--color:  hsl(${(i + j) * 18
 }, 90%, 50%);"></i>
-  
+
   `
   ).join("")}
 </li>

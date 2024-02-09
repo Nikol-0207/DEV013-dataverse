@@ -5,7 +5,7 @@ export default [
     description:
       "Color TV-Game fue la primera consola de videojuegos doméstica de Nintendo y se comercializó exclusivamente en Japón. Esta consola incluía una serie de videojuegos almacenados en su memoria interna ya que aún no existían los cartuchos intercambiables.",
     imageUrl:
-      "/src/data/img/colort.png",
+      "/data/img/colort.png",
     tipo: "Consola de sobremesa",
     PrecioDeLanzamiento: "$199 USD",
     JuegoMásPopular: "Variaciones del Pong",
@@ -64,7 +64,7 @@ export default [
     name: "Game Boy",
     description: "La Game Boy es una videoconsola portátil de 8 bits. Salió a la venta por primera vez en Japón el 21 de abril de 1989, en Norteamérica más tarde ese mismo año y en Europa a finales de 1990.Es la segunda consola portátil de Nintendo y combina características de la consola portátil Game & Watch y de la consola doméstica NES. ",
     imageUrl:
-      "/src/data/img/Game-Boy.png",
+      "/data/img/Game-Boy.png",
     tipo: "Consola portátil",
     PrecioDeLanzamiento: "$199 USD",
     JuegoMásPopular: "Tetris",
@@ -120,7 +120,7 @@ export default [
     name: "Game Boy Light",
     description: "Game Boy Light es el Santo Grial de los coleccionistas especializados en consolas portátiles y/o Nintendo, una máquina exclusiva de Japón que solucionaba el eterno problema del sistema Game Boy, la carencia de una pantalla retroiluminada.",
     imageUrl:
-      "/src/data/img/Game-Boy-Lightpng.png",
+      "/data/img/Game-Boy-Lightpng.png",
     tipo: "Consola portátil",
     PrecioDeLanzamiento: " $6,800 ¥",
     JuegoMásPopular: " Igual al Game Boy",
@@ -149,7 +149,7 @@ export default [
     name: "Game Boy Advance",
     description: "La Game Boy Advance, abreviada como GBA. El modelo original no tenía una pantalla con iluminación, lo que fue solucionado con la Game Boy Advance SP, un rediseño de la consola que incluía algunas mejoras como la pantalla con iluminación y el uso de baterías de litio.",
     imageUrl:
-      "/src/data/img/Nintendo-Game-Boy-Advance.png",
+      "/data/img/Nintendo-Game-Boy-Advance.png",
     tipo: "Consola portátil",
     PrecioDeLanzamiento: "$99.99 USD",
     JuegoMásPopular: "Pokémon Ruby y Sapphire",
@@ -178,7 +178,7 @@ export default [
     name: "Game Boy Micro",
     description: "La Game Boy Micro es una videoconsola portátil desarrollada y fabricada por Nintendo. Game Boy Micro es el segundo rediseño de la Game Boy Advance siendo la primera la Game Boy Advance SP, con nuevas características añadidas en la versión japonesa para hacerle compatible con la primera versión del Nintendo DS.",
     imageUrl:
-      "/src/data/img/Game-Boy-Micro.png",
+      "/data/img/Game-Boy-Micro.png",
     tipo: "Consola portátil",
     PrecioDeLanzamiento: "$99.99 USD",
     JuegoMásPopular: "Igual al Game Boy Advance",
@@ -220,7 +220,7 @@ export default [
     name: "Nintendo DSi XL",
     description: "Nintendo DSi XL incluye todas las funciones de la videoconsola portátil Nintendo DSi: dos cámaras de fotos, editor de imágenes y sonido, grabadora y reproductor de sonido, la posibilidad de descargar programas directamente a la consola desde la aplicación Tienda Nintendo DSi.",
     imageUrl:
-      "/src/data/img/Nintendo-DSi-XL.png",
+      "/data/img/Nintendo-DSi-XL.png",
     tipo: "Consola portátil de doble pantalla (Rediseño del Nintendo DSi",
     PrecioDeLanzamiento: "  $189.99 USD",
     JuegoMásPopular: " Super Smash Bros. Melee",
@@ -248,7 +248,7 @@ export default [
     id: 18,
     name: "Wii Mini",
     description: "Wii Mini significa menos tamaño pero también la reducción de funcionalidades. La retrocompatibilidad con los juegos de Gamecube se queda fuera así como las opciones online. Un hecho curioso, si bien es cierto que el fuerte de Wii no era el juego multijugador, si no el compartir esos momentos con los amigos. ",
-    imageUrl: "/src/data/img/wii_mini-removebg-previe.png",
+    imageUrl: "/data/img/wii_mini-removebg-previe.png",
     tipo: "Consola de sobremesa (Rediseño del Wii)",
     PrecioDeLanzamiento: " $99.99 USD",
     JuegoMásPopular: " Igual al Wii",
@@ -276,7 +276,7 @@ export default [
     id: 20,
     name: "New Nintendo 3DS",
     description: "La New Nintendo 3DS presenta varios cambios respecto a la Nintendo 3DS original y a la Nintendo 3DS XL. Las adiciones más notables son la inclusión de una segunda palanca de control analógico en el lado derecho de la consola, conocida como el C-Stick, y los nuevos botones traseros ZL y ZR.",
-    imageUrl: "/src/data/img/new_nintendo_3ds-.png",
+    imageUrl: "/data/img/new_nintendo_3ds-.png",
     tipo: "Consola portátil (Rediseño del 3DS con mejor hardware)",
     PrecioDeLanzamiento: "$179.99 USD",
     JuegoMásPopular: "Super Smash Bros. for Nintendo 3DS",
@@ -290,7 +290,7 @@ export default [
     name: "Nintendo Classic Mini: Super NES",
     description: "es una réplica en miniatura de la consola Super Nintendo (SNES). Su arquitectura está basada en la emulación de hardware, cuenta con una biblioteca permanente de 21 juegos integrados en su biblioteca, incluyendo algunos títulos de desarrolladores terceros bajo licencia de sus respectivos creadores.",
     imageUrl:
-      "/src/data/img/Nintendo_Classic_Mini_Super.png",
+      "/data/img/Nintendo_Classic_Mini_Super.png",
     tipo: "Consola de sobremesa (Reedición de SNES con juegos preinstalados)",
     PrecioDeLanzamiento: " $79.99 USD",
     JuegoMásPopular: "Variedad de juegos SNES clásicos",
@@ -332,7 +332,7 @@ export default [
     name: "Nintendo Switch OLED",
     description: "La nueva consola cuenta con una vibrante pantalla OLED de 7 pulgadas (17.78 cm), un soporte ajustable y amplio, una base con puerto LAN para conexión por cable, almacenamiento interno de 64 GB y audio mejorado.",
     imageUrl:
-      "/src/data/img/nintendo-switch-oled-.png",
+      "/data/img/nintendo-switch-oled-.png",
     tipo: "Consola híbrida (portátil y de sobremesa)",
     PrecioDeLanzamiento: "  $349.99 USD",
     JuegoMásPopular:

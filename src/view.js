@@ -50,18 +50,19 @@ export const renderItems = (data) => {
         </header>
         <main class="card-back__content">
           <dl itemscope itemtype="consoles" class="card-back__details-list">
-            <dt class="card-back__details-title">Descripción:</dt><dd  itemprop="description">${item.description
-}</dd>
-            <dt class="card-back__details-title">Tipo de consola:</dt><dd itemprop="tipo">${item.tipo
-}</dd>
-            <dt class="card-back__details-title">Precio de lanzamiento:</dt><dd itemprop="PrecioDeLanzamiento">${item.PrecioDeLanzamiento
-}</dd>
-            <dt class="card-back__details-title">Duración en el mercado:</dt><dd itemprop="DuraciónEnElMercado">${item.DuraciónEnElMercado
-}</dd>
-            <dt class="card-back__details-title">Generacion:</dt><dd itemprop="generation">${item.generation
-}</dd>
-            <dt class="card-back__details-title">Juego más jugado:</dt><dd itemprop="JuegoMásPopular">${item.JuegoMásPopular
-}</dd>
+            <dt ></dt>
+            <dd itemprop="description" class="card-back__details-description">${item.description}</dd>
+            <dt class="card-back__details-title" style="margin-bottom: 0;">Tipo de consola: </dt>
+            <dd class="card-back__item" itemprop="tipo">${item.tipo}</dd>
+            <dt class="card-back__details-title">Precio de lanzamiento: </dt>
+            <dd class="card-back__item" itemprop="PrecioDeLanzamiento">${item.PrecioDeLanzamiento}</dd>
+            <dt class="card-back__details-title">Duración en el mercado: </dt>
+            <dd class="card-back__item" itemprop="DuraciónEnElMercado">${item.DuraciónEnElMercado}</dd>
+            <dt class="card-back__details-title">Generacion:</dt>
+            <dd class="card-back__item" itemprop="generation">${item.generation}</dd>
+            <dt class="card-back__details-title">Juego más jugado:</dt> 
+            <dd class="card-back__item" itemprop="JuegoMásPopular">${item.JuegoMásPopular}</dd>
+
           </dl>
         </main>
         <footer class="card-back__footer" >

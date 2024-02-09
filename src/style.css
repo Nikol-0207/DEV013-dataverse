@@ -22,6 +22,7 @@ background: linear-gradient(90deg, rgba(59,73,198,1) 0%, rgba(226,20,34,1) 100%)
   margin-top: 4rem;
 }
 
+
 :is(.card-front, .card-back) {
    background: #ffff;
 
@@ -38,7 +39,7 @@ h1[name="header__titulo"]{
   justify-content: center;
   text-align: center;
   backdrop-filter: blur(1px);
-  font-size: 50pt;
+  font-size: 100pt;
   font-family: 'Black Ops One', system-ui;
   color: black;
 }
@@ -156,6 +157,7 @@ margin-top: 50px;
 margin-bottom: 50px;
 border-radius: 20px;
 box-shadow: 0 0 20px rgb(249, 248, 248);
+
 }
 
 #iconos {
@@ -227,8 +229,8 @@ box-shadow: 0 0 20px rgb(249, 248, 248);
   transform-style: preserve-3d;
   transition: all 700ms;
   perspective: 600px;
-  width: 400px;
-  min-height: 500px;
+  width: 450px;
+  min-height: 570px;
 }
 
 .card-front {
@@ -347,6 +349,7 @@ box-shadow: 0 0 20px rgb(249, 248, 248);
   bottom: -520px; /* Ajusta la posición inferior en lugar de superior */
   top: auto; /* Elimina la propiedad top para que no interfiera con bottom */
   left: auto;
+  
  /*  max-width: 100%;
   height: 250px;
   width: auto;
@@ -389,21 +392,28 @@ box-shadow: 0 0 20px rgb(249, 248, 248);
 }
 .card-back__header {
   position: relative;
+  
 }
+
 
 .card-back__header-image:hover {
   cursor: pointer;
   transform: scale(1);
+  clip-path: none;
+  border-radius: 50%;
 }
 
 .card-back__header-image:hover img {
-  transform: scale(1);
+transform: scale(1);
+  
 }
 
+
 .card-back {
+  
   font-family: 'Oswald', sans-serif;
-  font-size: 13.5pt;
-  padding: 10px;
+  font-size: 12.5pt;
+  padding: 2rem;
   text-align: justify;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
   position: absolute;
@@ -416,6 +426,17 @@ box-shadow: 0 0 20px rgb(249, 248, 248);
   border-radius: 25px;
 }
 
+.card-back__details-description{
+box-shadow: 0 0 0 2px;
+padding: 1rem;
+margin-bottom: 1rem;
+
+}
+.card-back__details-list{
+  display: flex;
+  flex-wrap: wrap;
+
+}
 .card--back-face {
   transform: rotateY(-180deg);
 }
@@ -434,6 +455,28 @@ box-shadow: 0 0 20px rgb(249, 248, 248);
   background-color:black;
   box-shadow: 0 0 40px rgba(231, 238, 8, 0.785);
 }
+
+.card-back__details-title{
+  padding-inline-start:1rem ;
+  box-sizing: border-box;
+  color: rgb(136, 15, 15);
+  width: 50%;
+  height: 35px;
+  box-shadow: -1px 0 0 1px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center
+}
+.card-back__item{
+  color: rgb(0, 0, 0);
+  width: 50%;
+  height: 35px;
+  box-shadow: 1px 0 0 1px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
 #blurBackground {
   display: none;
   position: fixed;

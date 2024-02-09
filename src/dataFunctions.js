@@ -9,6 +9,7 @@ export const orderType = (selectedType) => {
 export const orderGeneration = (selectedGeneration) => {
   const filtered = data.filter((item)=>
     item.numberGeneration === parseInt(selectedGeneration));
+    
   return filtered;
 };
 

@@ -40,17 +40,20 @@
 
       <section class="card">
         <div class="box-select">
-          <label for="buscador">Buscar:</label>
+            <label for="buscador">Buscar:</label>
           <input type="text"  id="buscador" />
           <button id="searchName" >
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
-          </div>
-          <br>
+
+          <button id="statics"> </button>
+        </div>
           <div class="select">
             <label for="mySelect"></label>
+
             <select name="select" id="mySelect" data-testid="select-sort">
-              <option value="" disabled selected>
+
+            <option value="" disabled selected >
               Filtrar por generación
             </option>
             <option value="0">Reedición </option>
@@ -66,9 +69,10 @@
           </select>
           <label for="ordenar"></label>
           <select name="sort-order" id="ordenar">
-            <option value="" disabled selected>Ordenar</option>
-            <option value="+">Ascendente</option>
-            <option value="-">Descendente</option>
+            <option value="" disabled selected>Ordenar por</option>
+            <option value="+">Precio</option>
+            <option value="abc">A-Z</option>
+            <option value="cba">Z-A</option>
            </select>
            <label for="type"></label>
            <select name="type-order" id="type">
@@ -83,6 +87,7 @@
           <ul class="container-item"></ul>
         </div>
       </section>
+
       <div id="blurBackground"></div>
       <div id="popup" class="popup">
         <div class="popup-content">
@@ -95,8 +100,10 @@
           </div>
         </div>
       </div>
-
+        
     </main>
     <script src="main.js" type="module"></script>
+    <script  type="module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" > </script>
+    <script  nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js" > </script>
   </body>
 </html>

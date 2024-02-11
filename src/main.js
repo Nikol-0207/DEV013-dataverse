@@ -129,6 +129,8 @@ function showStatistics() {
       ],
     },
     options: {
+      width: 400, // Establece el ancho del canvas
+      height: 300, // Establece la altura del canvas
       scales: {
         y: {
           beginAtZero: true,

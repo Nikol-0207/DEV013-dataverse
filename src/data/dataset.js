@@ -265,7 +265,7 @@ export default [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Wii_U_Console_and_Gamepad.png/1280px-Wii_U_Console_and_Gamepad.png",
     tipo: "Consola sobremesa GamePad",
     PrecioDeLanzamiento:
-      "$299.99 USD-$349.99 USD",
+      "$349.99 USD",
     JuegoMásPopular: "Mario Kart 8",
     DuraciónEnElMercado: "5 años",
     generation: "Octava Generacion",

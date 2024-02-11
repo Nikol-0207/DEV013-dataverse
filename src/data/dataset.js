@@ -271,7 +271,7 @@ export default [
     generation: "Octava Generacion",
     numberGeneration: 8,
     numberType: 11,
-  },
+  }, 
   {
     id: 20,
     name: "New Nintendo 3DS",

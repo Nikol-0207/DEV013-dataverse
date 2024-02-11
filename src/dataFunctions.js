@@ -9,7 +9,7 @@ export const orderType = (selectedType) => {
 export const orderGeneration = (selectedGeneration) => {
   const filtered = data.filter((item)=>
     item.numberGeneration === parseInt(selectedGeneration));
-    
+
   return filtered;
 };
 
@@ -22,9 +22,9 @@ export const orderGeneration = (selectedGeneration) => {
 export const filterBy = (data, filterBy, value) => {
   return data.filter(item => item[filterBy] === value);
 };
-
+*/
 // Calcular estadísticas
 export const computeStats = (data) => {
 
   return data.length;
-}; */
+};

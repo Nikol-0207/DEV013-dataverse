@@ -1,5 +1,8 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 import { orderType, orderGeneration } from "./dataFunctions.js";
 import { renderItems, renderBackground } from "./view.js";
+
 
 import data from "./data/dataset.js";
 
@@ -15,6 +18,12 @@ const $contenedor = document.querySelector("#root");
 const popup = document.getElementById("popup");
 const blurBackground = document.querySelector('#blurBackground');
 const closeButton = document.getElementById("closePopup");
+
+
+const statistics = document.querySelector('#statistics-database');
+const closeBox = document.querySelector('.closeHistogram');
+const buttonStatistics = document.querySelector('#statics');
+
 
 const actualizarTarjetas = (data) => {
   const $contenedorTarjetas = document.querySelector(".container-item");
@@ -39,7 +48,7 @@ $selecType.addEventListener("input", (event) => {
 
   actualizarTarjetas(filteredDataByType);
 });
-//ventana emergente
+//ventanas emergente
 
 // Función para mostrar la ventana emergente
 function showPopup() {
@@ -57,6 +66,61 @@ function hidePopup() {
 
 // Asignar evento de click al botón de cerrar
 closeButton.addEventListener("click", hidePopup);
+//Ventana emergente de estadistica
+
+function showStatistics(){
+  blurBackground.style.display = 'block';
+  /* document.body.style.overflow='hidden'; */
+  statistics.style.display = "block";
+  const ctx = document.getElementById('histograma').getContext('2d');
+
+  const histograma = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Gen #1:Color Tv Game', 'Gen #2:Color Tv Game', 'Etiqueta 3', 'Etiqueta 4', 'Etiqueta 5', 'Etiqueta 6','Etiqueta'],
+      datasets: [{
+        label: 'Mayor Precio de Consola de cada Generación',
+        data: [199, 40, 179.99, 5, 2,50,100],
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)',
+          'rgba(153, 102, 255, 0.2)'
+        ],
+        borderColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)'
+        ],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+
+}
+
+function hideStatistics(){
+  blurBackground.style.display = 'none';
+  /* document.body.style.overflow='auto'; */
+  statistics.style.display = "none";
+}
+buttonStatistics.addEventListener("click",showStatistics);
+closeBox.addEventListener("click",hideStatistics);
+
+
+// Crear el histograma con Chart.js
+
+
 // Filtrar por nombre
 
 $botonBuscar.addEventListener("click", () => {

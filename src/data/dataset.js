@@ -5,7 +5,8 @@ export default [
     description:
       "Color TV-Game fue la primera consola de videojuegos doméstica de Nintendo y se comercializó exclusivamente en Japón. Esta consola incluía una serie de videojuegos almacenados en su memoria interna ya que aún no existían los cartuchos intercambiables.",
     imageUrl:
-      "/data/img/colort.png",
+      "/src/data/img/colort.png",
+    imageUrlGame: "https://silverballmuseum.com/wp-content/uploads/2016/05/pong-arcade-game-atari.jpg",
     tipo: "Consola de sobremesa",
     PrecioDeLanzamiento: "$199 USD",
     JuegoMásPopular: "Variaciones del Pong",
@@ -13,6 +14,7 @@ export default [
     generation: "Primera Generación",
     numberGeneration: 1,
     numberType: 11,
+
   },
   {
     id: 2,
@@ -21,6 +23,7 @@ export default [
       "La serie Game & Watch (conocidas en Alemania como tricOtronic y popularmente en España como «maquinitas») es una línea de 59 consolas portátiles de videojuegos fabricadas por Nintendo y creadas por Gunpei Yokoi de 1980 a 1991. Cada una de ellas poseían un único juego de pantalla LCD y tenían además reloj y alarma.",
     imageUrl:
       "https://upload.wikimedia.org/wikipedia/commons/1/15/Game_%26_Watch.png",
+    imageUrlGame: "",
     tipo: "Consola portátil",
     PrecioDeLanzamiento: "$40 USD",
     JuegoMásPopular: "Epoch Man",
@@ -36,6 +39,7 @@ export default [
       "Está considerada como la videoconsola más exitosa de su época y contribuyó a revitalizar de forma significativa la industria estadounidense de los videojuegos, la cual había sufrido previamente una debacle financiera en 1983, además de establecer el nivel estándar para consolas posteriores en aspectos primordiales.",
     imageUrl:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/NES-Console-Set.png/1024px-NES-Console-Set.png",
+    imageUrlGame: "",
     tipo: "Consola de sobremesa",
     PrecioDeLanzamiento: "$179.99 USD",
     DuraciónEnElMercado: "12 años",
@@ -51,6 +55,7 @@ export default [
       "Antes que la NES fue la Famicom de Nintendo. La consola más importante de todos los tiempos, la consola de videojuegos por excelencia de Nintendo, una máquina de 8 Bits que copó y revolucionó el mercado de los videojuegos, conquistando posteriormente gracias a la calidad de sus videojuegos, todo el globo terráqueo.",
     imageUrl:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Nintendo-Famicom-Console-Set-FL.png/1280px-Nintendo-Famicom-Console-Set-FL.png",
+    imageUrlGame: "",
     tipo: "Consola de sobremesa",
     PrecioDeLanzamiento: "$99 USD",
     JuegoMásPopular: "Super Mario Bros",
@@ -64,7 +69,8 @@ export default [
     name: "Game Boy",
     description: "La Game Boy es una videoconsola portátil de 8 bits. Salió a la venta por primera vez en Japón el 21 de abril de 1989, en Norteamérica más tarde ese mismo año y en Europa a finales de 1990.Es la segunda consola portátil de Nintendo y combina características de la consola portátil Game & Watch y de la consola doméstica NES. ",
     imageUrl:
-      "/data/img/Game-Boy.png",
+      "/src/data/img/Game-Boy.png",
+    imageUrlGame: "",
     tipo: "Consola portátil",
     PrecioDeLanzamiento: "$199 USD",
     JuegoMásPopular: "Tetris",
@@ -79,6 +85,7 @@ export default [
     description: "Oficialmente como la Super NES o SNES en América y como la Super Nintendo en Europa,es la segunda videoconsola descontinuada de sobremesa de Nintendo y la sucesora de Nintendo Entertainment System (NES) en América y Europa. Mantuvo una gran rivalidad en todo el mundo con la Sega Mega Drive (o Sega Genesis) durante la era de 16 bits.",
     imageUrl:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nintendo-Super-Famicom-Set-FL.png/1280px-Nintendo-Super-Famicom-Set-FL.png",
+    imageUrlGame: "",
     tipo: "Consola de Sobremesa",
     PrecioDeLanzamiento: "$199 USD",
     JuegoMásPopular: "Super Mario World",
@@ -93,6 +100,7 @@ export default [
     description: "La Virtual Boy es una consola de videojuegos portátil de sobremesa de 32 bits desarrollada y fabricada por Nintendo.El jugador usa la consola como una pantalla montada en la cabeza, colocando la cabeza contra el ocular para ver una pantalla monocromática roja con fondo negro.",
     imageUrl:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Virtual-Boy-Set.png/800px-Virtual-Boy-Set.png",
+    imageUrlGame: "",
     PrecioDeLanzamiento: "$180 USD",
     tipo: "Consola sobremesa (RV)",
     JuegoMásPopular: "Mario's Tennis",
@@ -107,6 +115,7 @@ export default [
     description: "Nintendo 64 es la cuarta videoconsola de sobremesa producida por Nintendo, desarrollada para suceder a la Super Nintendo. Fue la primera consola concebida para dar el salto del 2D al 3D. Compitió en el mercado de la quinta generación con Saturn de Sega y PlayStation de Sony; esta última, creada a partir de diseños descartados previamente por Nintendo.",
     imageUrl:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/N64-Console-Set.png/1280px-N64-Console-Set.png",
+    imageUrlGame: "",
     tipo: "Consola de Sobremesa",
     PrecioDeLanzamiento: "$199.99 USD",
     JuegoMásPopular: "Super Mario 64",
@@ -120,7 +129,8 @@ export default [
     name: "Game Boy Light",
     description: "Game Boy Light es el Santo Grial de los coleccionistas especializados en consolas portátiles y/o Nintendo, una máquina exclusiva de Japón que solucionaba el eterno problema del sistema Game Boy, la carencia de una pantalla retroiluminada.",
     imageUrl:
-      "/data/img/Game-Boy-Lightpng.png",
+      "/src/data/img/Game-Boy-Lightpng.png",
+    imageUrlGame: "",
     tipo: "Consola portátil",
     PrecioDeLanzamiento: "$46 USD",
     JuegoMásPopular: " Igual al Game Boy",
@@ -136,6 +146,7 @@ export default [
     description: "Su principal característica fue su procesador central basado en un IBM PowerPC (tecnología previa utilizada en computadoras personales y portátiles), y su procesador gráfico desarrollado por ATI Technologies. ",
     imageUrl:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/GameCube-Console-Set.png/1024px-GameCube-Console-Set.png",
+    imageUrlGame: "",
     tipo: "Consola de sobremesa",
     PrecioDeLanzamiento: " $199.99 USD",
     JuegoMásPopular: "Super Smash Bros. Melee",
@@ -149,7 +160,8 @@ export default [
     name: "Game Boy Adv.",
     description: "La Game Boy Advance, abreviada como GBA. El modelo original no tenía una pantalla con iluminación, lo que fue solucionado con la Game Boy Advance SP, un rediseño de la consola que incluía algunas mejoras como la pantalla con iluminación y el uso de baterías de litio.",
     imageUrl:
-      "/data/img/Nintendo-Game-Boy-Advance.png",
+      "/src/data/img/Nintendo-Game-Boy-Advance.png",
+    imageUrlGame: "",
     tipo: "Consola portátil",
     PrecioDeLanzamiento: "$99.99 USD",
     JuegoMásPopular: "Pokémon Ruby y Sapphire",
@@ -165,6 +177,7 @@ export default [
     description: "Permitía la reproducción de videojuegos y multimedia, rival directo fue la PlayStation Portable. Fue la tercera consola para videojuegos en que podemos interactuar con el juego mediante el uso de la pantalla táctil. Fue la 2º consola más vendida de toda la historia, siendo superada levemente por la PlayStation 2 y es la consola más vendida de toda la historia de Nintendo.",
     imageUrl:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Nintendo-DS-Fat-Blue.png/800px-Nintendo-DS-Fat-Blue.png",
+    imageUrlGame: "",
     tipo: "Consola portátil doble pantalla",
     PrecioDeLanzamiento: "$149.99 USD",
     JuegoMásPopular: "Nintendogs",
@@ -178,7 +191,8 @@ export default [
     name: "Game Boy Micro",
     description: "La Game Boy Micro es una videoconsola portátil desarrollada y fabricada por Nintendo. Game Boy Micro es el segundo rediseño de la Game Boy Advance siendo la primera la Game Boy Advance SP, con nuevas características añadidas en la versión japonesa para hacerle compatible con la primera versión del Nintendo DS.",
     imageUrl:
-      "/data/img/Game-Boy-Micro.png",
+      "/src/data/img/Game-Boy-Micro.png",
+      imageUrlGame: "",
     tipo: "Consola portátil",
     PrecioDeLanzamiento: "$99.99 USD",
     JuegoMásPopular: "Pokémon Ruby y Sapphire",
@@ -193,7 +207,8 @@ export default [
     description: "La Nintendo DS Lite es un 21% más ligera que el modelo original. La posición de los botones ha sido cambiada ligeramente, como el botón ON/OFF que ha sido cambiado, de estar encima de la cruceta de control y ser un botón, a estar en el lado derecho de la consola y ser movido con el dedo. ",
     imageUrl:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Nintendo-DS-Lite-w-stylus.png/800px-Nintendo-DS-Lite-w-stylus.png",
-    tipo: "Consola portátil doble pantalla",
+      imageUrlGame: "",
+      tipo: "Consola portátil doble pantalla",
     PrecioDeLanzamiento: "$129.99 USD",
     JuegoMásPopular: "Nintendogs",
     DuraciónEnElMercado: "2 años",
@@ -207,7 +222,8 @@ export default [
     description: "La característica más distintiva de la consola fue su mando inalámbrico, el Wii Remote, el cual se usaba como un dispositivo de mano con el que se podía apuntar, además de que detectaba movimientos en un plano tridimensional. Otra de sus peculiaridades era el servicio WiiConnect24, que permitía recibir mensajes y actualizaciones a través de Internet en modo de espera.",
     imageUrl:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Wii_console.png/800px-Wii_console.png",
-    tipo: "Consola de sobremesa",
+      imageUrlGame: "",
+      tipo: "Consola de sobremesa",
     PrecioDeLanzamiento: "$249.99 USD",
     JuegoMásPopular: "Wii Sports",
     DuraciónEnElMercado: "7 años",
@@ -220,7 +236,8 @@ export default [
     name: "Nintendo DSi XL",
     description: "Nintendo DSi XL incluye todas las funciones de la videoconsola portátil Nintendo DSi: dos cámaras de fotos, editor de imágenes y sonido, grabadora y reproductor de sonido, la posibilidad de descargar programas directamente a la consola desde la aplicación Tienda Nintendo DSi.",
     imageUrl:
-      "/data/img/Nintendo-DSi-XL.png",
+      "/src/data/img/Nintendo-DSi-XL.png",
+      imageUrlGame: "",
     tipo: "Portátil doble pantalla",
     PrecioDeLanzamiento: "  $189.99 USD",
     JuegoMásPopular: " Super Smash Bros. Melee",
@@ -235,7 +252,8 @@ export default [
     description: "Nintendo 3DS es una videoconsola portátil descontinuada de la multinacional de origen japonés, Nintendo, para videojuegos y multimedia, cuya atracción principal es poder mostrar gráficos en 3D sin necesidad de gafas especiales, gracias a la autoestereoscopia.La consola es retrocompatible con la Nintendo DS y con el software de DSiWare.",
     imageUrl:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Nintendo-3DS-AquaOpen.png/800px-Nintendo-3DS-AquaOpen.png",
-    tipo: "Portátil doble pantalla 3D.",
+      imageUrlGame: "",
+      tipo: "Portátil doble pantalla 3D.",
     PrecioDeLanzamiento: "$249.99 USD",
     JuegoMásPopular: "  Mario Kart 7",
     DuraciónEnElMercado: "2 años",
@@ -248,7 +266,8 @@ export default [
     id: 18,
     name: "Wii Mini",
     description: "Wii Mini significa menos tamaño pero también la reducción de funcionalidades. La retrocompatibilidad con los juegos de Gamecube se queda fuera así como las opciones online. Un hecho curioso, si bien es cierto que el fuerte de Wii no era el juego multijugador, si no el compartir esos momentos con los amigos. ",
-    imageUrl: "/data/img/wii_mini-removebg-previe.png",
+    imageUrl: "/src/data/img/wii_mini-removebg-previe.png",
+    imageUrlGame: "",
     tipo: "Consola de sobremesa",
     PrecioDeLanzamiento: " $99.99 USD",
     JuegoMásPopular: " Igual al Wii",
@@ -263,6 +282,7 @@ export default [
     description: "Wii U es la primera consola de Nintendo en producir gráficos en alta definición hasta una resolución de 1080p. Incluyó un nuevo mando que incorporó una pantalla táctil que recibía señal en calidad 480p de la consola, lo que permitió seguir jugando incluso cuando el televisor estaba apagado.",
     imageUrl:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Wii_U_Console_and_Gamepad.png/1280px-Wii_U_Console_and_Gamepad.png",
+    imageUrlGame: "",
     tipo: "Consola sobremesa GamePad",
     PrecioDeLanzamiento:
       "$349.99 USD",
@@ -271,13 +291,14 @@ export default [
     generation: "Octava Generacion",
     numberGeneration: 8,
     numberType: 11,
-    
-  }, 
+
+  },
   {
     id: 20,
     name: "New Nintendo 3DS",
     description: "La New Nintendo 3DS presenta varios cambios respecto a la Nintendo 3DS original y a la Nintendo 3DS XL. Las adiciones más notables son la inclusión de una segunda palanca de control analógico en el lado derecho de la consola, conocida como el C-Stick, y los nuevos botones traseros ZL y ZR.",
-    imageUrl: "/data/img/new_nintendo_3ds-.png",
+    imageUrl: "/src/data/img/new_nintendo_3ds-.png",
+    imageUrlGame: "",
     tipo: "Consola portátil",
     PrecioDeLanzamiento: "$179.99 USD",
     JuegoMásPopular: "Super Smash Bros.",
@@ -291,7 +312,8 @@ export default [
     name: "Nintendo Classic Mini: Super NES",
     description: "es una réplica en miniatura de la consola Super Nintendo (SNES). Su arquitectura está basada en la emulación de hardware, cuenta con una biblioteca permanente de 21 juegos integrados en su biblioteca, incluyendo algunos títulos de desarrolladores terceros bajo licencia de sus respectivos creadores.",
     imageUrl:
-      "/data/img/Nintendo_Classic_Mini_Super.png",
+      "/src/data/img/Nintendo_Classic_Mini_Super.png",
+      imageUrlGame: "",
     tipo: "Consola de sobremesa",
     PrecioDeLanzamiento: " $79.99 USD",
     JuegoMásPopular: "Juegos SNES clásicos",
@@ -306,6 +328,7 @@ export default [
     description: "Puede utilizarse como consola de sobremesa con la unidad principal insertada en una estación de acoplamiento para conectarla con un televisor. También, puede ser extraída de la base y utilizada de forma similar a una tableta a través de su pantalla táctil o colocada sobre una superficie gracias a su soporte plástico integrado siendo así visible.",
     imageUrl:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Nintendo_Switch_Console.png/1280px-Nintendo_Switch_Console.png",
+      imageUrlGame: "",
     tipo: " Consola híbrida",
     PrecioDeLanzamiento: " $299.99 USD",
     JuegoMásPopular: "Mario Kart 8 Deluxe",
@@ -320,6 +343,7 @@ export default [
     description: "La consola se diseñó exclusivamente para su uso portátil, sin incluir un dock para acoplarla a la TV, resultando en un modelo más compacto. Fue diseñada por Nintendo para facilitar el transporte de su nueva generación de consolas. ",
     imageUrl:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Nintendo_Switch_Lite_representation.png/1280px-Nintendo_Switch_Lite_representation.png",
+      imageUrlGame: "",
     tipo: "Consola portátil",
     PrecioDeLanzamiento: " $199.99 USD",
     JuegoMásPopular: " Mario Kart 8 Deluxe",
@@ -330,10 +354,11 @@ export default [
   },
   {
     id: 24,
-    name: "N. Switch OLED",
+    name: "Nintendo Switch OLED",
     description: "La nueva consola cuenta con una vibrante pantalla OLED de 7 pulgadas (17.78 cm), un soporte ajustable y amplio, una base con puerto LAN para conexión por cable, almacenamiento interno de 64 GB y audio mejorado.",
     imageUrl:
-      "/data/img/nintendo-switch-oled-.png",
+      "/src/data/img/nintendo-switch-oled-.png",
+    imageUrlGame: "",
     tipo: "Consola híbrida",
     PrecioDeLanzamiento: "  $349.99 USD",
     JuegoMásPopular:

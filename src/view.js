@@ -12,6 +12,9 @@ export const renderItems = (data) => {
     const $tarjeta = document.createElement("li");
     $tarjeta.setAttribute("class","li_sta");
     $tarjeta.setAttribute("id", `li-${item.id}`);
+    $tarjeta.setAttribute("itemtype","consoles");
+    $tarjeta.setAttribute("itemscope","");
+    
     const toggleContent = function () {
       const selector = this.getAttribute("data-id");
       const $tarjeta = document.getElementById(selector);

@@ -27,11 +27,11 @@ body {
   color: black;
   box-sizing: border-box;
 }
-h1[name="header__titulo"] {
+h1[name="header__titulo"] {s
   justify-content: center;
   text-align: center;
   backdrop-filter: blur(1px);
-  font-size: 100pt;
+  font-size: 110pt;
   font-family: "Black Ops One", system-ui;
   color: black;
 }
@@ -41,8 +41,8 @@ h1[name="header__titulo"] {
   background: rgb(133, 19, 19);
   padding: 1rem;
   backdrop-filter: blur(1px);
-  font-size: 20pt;
-  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-family: "Silkscreen", sans-serif;
   border-radius: 25px;
   margin-right: 100px;
   margin-left: 100px;
@@ -73,6 +73,7 @@ h1[name="header__titulo"] {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   border: 2px solid rgb(0, 0, 0);
   padding: 10px 0px;
+  
 }
 #reset {
   
@@ -100,15 +101,18 @@ label[for="buscador"] {
 }
 #buscador {
   background:rgba(188, 177, 177, 0.296);
-  font-size: 25px;
+  font-size: 18px;
   backdrop-filter: blur(1px);
   width: 350px;
   height: 40px;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 10px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Silkscreen", sans-serif;
+  text-align: center;
 }
-
+.fa-pie-chart{
+  transform: scale(0.7);
+}
 #statics {
   font-size: 24px;
   background-position: 10px center;
@@ -141,31 +145,31 @@ label[for="buscador"] {
   transform: scale(1.1);
 }
 select[name="select"] {
-  text-align: center;
-  background:rgba(188, 177, 177, 0.296);
-  font-family: "Oswald", sans-serif;
-  border: 2px solid rgb(0, 0, 0);
-  backdrop-filter: blur(1px);
-  display: flex;
-  font-size: 20px;
-  border-radius: 15px;
-  width: 250px; /* Ancho del selector */
-  height: 40px; /* Alto del selector */
-  color: #000000;
+    text-align: center;
+    background: rgba(188, 177, 177, 0.296);
+    font-family: "Silkscreen", sans-serif;
+    border: 2px solid rgb(0, 0, 0);
+    backdrop-filter: blur(1px);
+    display: flex;
+    font-size: 18px;
+    border-radius: 15px;
+    height: 40px;
+    color: #000000;
+    padding-inline: 1rem;
 }
 
 
 select[name="sort-order"] {
   text-align: center;
   background:rgba(188, 177, 177, 0.296);
-  font-family: "Oswald", sans-serif;
+  font-family: "Silkscreen", sans-serif;
   border: 2px solid rgb(0, 0, 0);
   backdrop-filter: blur(1px);
   display: flex;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 15px;
   margin-left: 10px;
-  width: 180px;
+  padding-inline: 1rem;
   height: 40px;
   color: #000000;
 }
@@ -173,13 +177,13 @@ select[name="sort-order"] {
 select[name="type-order"] {
   text-align: center;
   background: rgba(188, 177, 177, 0.296);
-  font-family: "Oswald", sans-serif;
+  font-family: "Silkscreen", sans-serif;
   border: 2px solid rgb(0, 0, 0);
   backdrop-filter: blur(1px);
   display: flex;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 15px;
-  width: 220px;
+  padding-inline: 1rem;
   height: 40px;
   box-sizing: border-box;
   color: #000000;
@@ -481,7 +485,7 @@ select[name="type-order"] {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   width: 20%;
-  height: 50%;
+  height: 30%;
   background-color: black;
   box-shadow: 0 0 40px rgba(231, 238, 8, 0.785);
 }
@@ -526,11 +530,11 @@ select[name="type-order"] {
   border-radius: 10px;
   text-align: center;
   height: 100px;
-  font-size: 25px;
+  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Oswald", sans-serif;
+  font-family: "Silkscreen", sans-serif;
 }
 /* Estilos para el contenido de la ventana emergente */
 .popup-content {

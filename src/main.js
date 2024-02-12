@@ -1,14 +1,14 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
-import { orderType, orderGeneration } from "./dataFunctions.js";
+import { filterBy, sortBy} from "./dataFunctions.js";
 import { renderItems, renderBackground } from "./view.js";
 
 import data from "./data/dataset.js";
 
-//console.log("aqui main" + example, renderItems(data), data);
-const $selecType = document.querySelector('[name="type-order"]'); //selector por tipo
+let currentData = data;  //variable global para guardar los cambios de la data y se guarde cuando halla cambios en filtros y pueda ordenar por ese
+// Obtener el nombre del selector en forma de cadena
+const $selecType = document.querySelector('[name="type-order"]');
 const $selection = document.querySelector("#mySelect");
-//const $ordAlpha = document.querySelector('#ordenar');
 const $iconos = document.querySelector("#iconos");
 const $buscador = document.querySelector("#buscador");
 const $botonBuscar = document.querySelector("#searchName");
@@ -22,26 +22,38 @@ const statistics = document.querySelector("#statistics-database");
 const closeBox = document.querySelector(".closeHistogram");
 const buttonStatistics = document.querySelector("#statics");
 
-const actualizarTarjetas = (data) => {
+const actualizarTarjetas = (dataToShow) => {
   const $contenedorTarjetas = document.querySelector(".container-item");
   $contenedorTarjetas.remove();
-  $contenedor.appendChild(renderItems(data));
+  $contenedor.appendChild(renderItems(dataToShow));
 };
 
 $iconos.appendChild(renderBackground());
 actualizarTarjetas(data);
 
 $selection.addEventListener("input", (event) => {
+  const selectorName = document.querySelector('#mySelect').getAttribute('name');
   const selectedGeneration = event.target.value;
-  const filteredData = orderGeneration(selectedGeneration);
-
-  actualizarTarjetas(filteredData);
+  const filtered = filterBy(data,selectorName,selectedGeneration);
+  currentData=filtered;
+  actualizarTarjetas(filtered);
 });
 $selecType.addEventListener("input", (event) => {
+  const selectorName = document.querySelector('#type').getAttribute('name');
   const selectedType = event.target.value;
-  const filteredDataByType = orderType(selectedType);
+  const filtered = filterBy(data,selectorName,selectedType);
+  currentData=filtered;
+  actualizarTarjetas(filtered);
+});
+//ordenamiento
+const $ordenarSelect = document.querySelector("#ordenar");
 
-  actualizarTarjetas(filteredDataByType);
+$ordenarSelect.addEventListener("change", () => {
+  const selectedOption = $ordenarSelect.value;
+  const datosOrdenados= sortBy(currentData,selectedOption);
+  currentData=datosOrdenados;
+
+  actualizarTarjetas(datosOrdenados);
 });
 
 function showPopup() {
@@ -78,7 +90,6 @@ function calcularSumaGeneraciones(arreglo) {
 
 function getInfoToFilters() {
   const cardsInformation = Array.from(document.querySelectorAll(`.card-back`));
-  console.log(cardsInformation);
   const data = cardsInformation.map(function (card) {
     return {
       PrecioDeLanzamiento: parseInt(
@@ -90,9 +101,9 @@ function getInfoToFilters() {
       generation: card.querySelector(`[itemprop="generation"]`).textContent,
     };
   });
-  console.log(data);
+
   const sumaGeneraciones = calcularSumaGeneraciones(data);
-  console.log(sumaGeneraciones);
+
   return sumaGeneraciones;
 }
 let histograma;
@@ -148,23 +159,14 @@ function hideStatistics() {
 }
 buttonStatistics.addEventListener("click", showStatistics);
 closeBox.addEventListener("click", hideStatistics);
-
-// Crear el histograma con Chart.js
-
 // Filtrar por nombre
-
+const selectorName = document.querySelector('#buscador').getAttribute('name');
 $botonBuscar.addEventListener("click", () => {
-  // Obtén el valor del input
+
   const searchTerm = $buscador.value.toLowerCase(); // convierte a minúsculas para ser insensible a mayúsculas/minúsculas
 
   // Filtra los elementos que contienen el término de búsqueda en el nombre
-  const filteredData = data.filter((item) =>
-    item.name
-      .replaceAll(" ", "")
-      .toLowerCase()
-      .includes(searchTerm.replaceAll(" ", "").toLowerCase())
-  );
-
+  const filteredData = filterBy(data,selectorName,searchTerm);
   if (filteredData.length > 0) {
     actualizarTarjetas(filteredData);
   } else {

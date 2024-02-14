@@ -31,7 +31,7 @@ h1[name="header__titulo"] {
   justify-content: center;
   text-align: center;
   backdrop-filter: blur(1px);
-  font-size: 60pt;
+  font-size: 100pt;
   font-family: "Black Ops One", system-ui;
   color: black;
 }
@@ -129,17 +129,15 @@ label[for="buscador"] {
 }
 
 .contenido-esta{
-
   background: #f9f9f9;
-  width: 56vmin;
-  height: 39vmin;
+  width: 64vmin;
+  height: 44vmin;
   border-radius: 15px;
   position: absolute;
-  left: 58vmin;
-  top: 18vmin;
+  left: 64vmin;
+  top: 21vmin;
   overflow: hidden;
   filter: invert(1);
-
 }
 
 #statics:hover {
@@ -276,7 +274,7 @@ select[name="type-order"] {
   perspective: 600px;
   width: 450px;
 
-  min-height: 570px;
+  min-height: 640px;
 }
 
 .card-front {
@@ -293,7 +291,7 @@ select[name="type-order"] {
 }
 
 .card-front__header {
-  margin-bottom: 20px;
+  margin-block: 4.4rem;
 }
 
 .card-front__header-image img {
@@ -433,6 +431,9 @@ select[name="type-order"] {
 }
 .card-back__header {
   position: relative;
+  bottom: -8rem;
+  right: 1rem;
+
 }
 
 .card-back__header-image:hover {

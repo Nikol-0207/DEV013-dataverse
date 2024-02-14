@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #070707;
+  background: #ffff;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -33,7 +33,7 @@ h1[name="header__titulo"] {
   backdrop-filter: blur(1px);
   font-size: 60pt;
   font-family: "Black Ops One", system-ui;
-  color: white;
+  color: black;
 }
 
 .header {

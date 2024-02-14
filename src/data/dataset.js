@@ -36,9 +36,9 @@ export default [
     numberType: 7,
     shortDescription: "",
     facts:{
-      year:0,
-      number:0,
-      example:0,
+      yearBirth:0,
+      numberType:0,
+      exampleDescription:0,
     },
   },
   {
@@ -57,9 +57,9 @@ export default [
     numberType: 11,
     shortDescription: "",
     facts:{
-      year:0,
-      number:0,
-      example:0,
+      yearBirth:0,
+      numberType:0,
+      exampleDescription:0,
     },
   },
   {
@@ -79,9 +79,9 @@ export default [
     numberType: 11,
     shortDescription: "",
     facts:{
-      year:0,
-      number:0,
-      example:0,
+      yearBirth:0,
+      numberType:0,
+      exampleDescription:0,
     },
   },
   {
@@ -100,9 +100,9 @@ export default [
     numberType: 7,
     shortDescription: "",
     facts:{
-      year:0,
-      number:0,
-      example:0,
+      yearBirth:0,
+      numberType:0,
+      exampleDescription:0,
     },
   },
   {
@@ -121,9 +121,9 @@ export default [
     numberType: 11,
     shortDescription: "",
     facts:{
-      year:0,
-      number:0,
-      example:0,
+      yearBirth:0,
+      numberType:0,
+      exampleDescription:0,
     },
   },
   {
@@ -142,9 +142,9 @@ export default [
     numberType: 11,
     shortDescription: "",
     facts:{
-      year:0,
-      number:0,
-      example:0,
+      yearBirth:0,
+      numberType:0,
+      exampleDescription:0,
     },
   },
   {
@@ -163,9 +163,9 @@ export default [
     numberType: 11,
     shortDescription: "",
     facts:{
-      year:0,
-      number:0,
-      example:0,
+      yearBirth:0,
+      numberType:0,
+      exampleDescription:0,
     },
   },
   {
@@ -184,9 +184,9 @@ export default [
     numberType: 7,
     shortDescription: "",
     facts:{
-      year:0,
-      number:0,
-      example:0,
+      yearBirth:0,
+      numberType:0,
+      exampleDescription:0,
     },
   },
 
@@ -206,9 +206,9 @@ export default [
     numberType: 11,
     shortDescription: "",
     facts:{
-      year:0,
-      number:0,
-      example:0,
+      yearBirth:0,
+      numberType:0,
+      exampleDescription:0,
     },
   },
   {
@@ -216,7 +216,7 @@ export default [
     name: "Game Boy Adv.",
     description: "La Game Boy Advance, abreviada como GBA. El modelo original no tenía una pantalla con iluminación, lo que fue solucionado con la Game Boy Advance SP, un rediseño de la consola que incluía algunas mejoras como la pantalla con iluminación y el uso de baterías de litio.A diferencia de las anteriores Game Boy que tenían la forma vertical de la Game Boy original, la Game Boy Advance fue diseñada por el francés Gwénaël Nicolas,  y su estudio Curiosity, en forma horizontal con los botones a los lados del dispositivo en vez de debajo de la pantalla.",
     imageUrl:
-      "https://w7.pngwing.com/pngs/587/651/png-transparent-game-boy-advance-sp-game-boy-color-video-games-nintendo-electronics-gadget-nintendo.png",
+      "https://p7.hiclipart.com/preview/403/300/915/game-boy-advance-game-boy-family-game-boy-color-video-game-nintendo.jpg",
 
     tipo: "Consola portátil",
     precioDeLanzamiento: "$99.99 USD",
@@ -227,9 +227,9 @@ export default [
     numberType: 7,
     shortDescription: "",
     facts:{
-      year:0,
-      number:0,
-      example:0,
+      yearBirth:0,
+      numberType:0,
+      exampleDescription:0,
     },
   },
 
@@ -249,9 +249,9 @@ export default [
     numberType: 4,
     shortDescription: "",
     facts:{
-      year:0,
-      number:0,
-      example:0,
+      yearBirth:0,
+      numberType:0,
+      exampleDescription:0,
     },
   },
   {
@@ -270,9 +270,9 @@ export default [
     numberType: 7,
     shortDescription: "",
     facts:{
-      year:0,
-      number:0,
-      example:0,
+      yearBirth:0,
+      numberType:0,
+      exampleDescription:0,
     },
   },
   {
@@ -291,9 +291,9 @@ export default [
     numberType: 4,
     shortDescription: "",
     facts:{
-      year:0,
-      number:0,
-      example:0,
+      yearBirth:0,
+      numberType:0,
+      exampleDescription:0,
     },
   },
   {
@@ -312,9 +312,9 @@ export default [
     numberType: 11,
     shortDescription: "",
     facts:{
-      year:0,
-      number:0,
-      example:0,
+      yearBirth:0,
+      numberType:0,
+      exampleDescription:0,
     },
   },
   {
@@ -333,9 +333,9 @@ export default [
     numberType: 4,
     shortDescription: "",
     facts:{
-      year:0,
-      number:0,
-      example:0,
+      yearBirth:0,
+      numberType:0,
+      exampleDescription:0,
     },
   },
   {
@@ -354,9 +354,9 @@ export default [
     numberType: 4,
     shortDescription: "",
     facts:{
-      year:0,
-      number:0,
-      example:0,
+      yearBirth:0,
+      numberType:0,
+      exampleDescription:0,
     },
   },
 
@@ -375,9 +375,9 @@ export default [
     numberType: 11,
     shortDescription: "",
     facts:{
-      year:0,
-      number:0,
-      example:0,
+      yearBirth:0,
+      numberType:0,
+      exampleDescription:0,
     },
   },
   {
@@ -396,9 +396,9 @@ export default [
     numberType: 11,
     shortDescription: "",
     facts:{
-      year:0,
-      number:0,
-      example:0,
+      yearBirth:0,
+      numberType:0,
+      exampleDescription:0,
     },
   },
   {
@@ -415,9 +415,9 @@ export default [
     numberType: 7,
     shortDescription: "",
     facts:{
-      year:0,
-      number:0,
-      example:0,
+      yearBirth:0,
+      numberType:0,
+      exampleDescription:0,
     },
   },
   {
@@ -436,9 +436,9 @@ export default [
     numberType: 11,
     shortDescription: "",
     facts:{
-      year:0,
-      number:0,
-      example:0,
+      yearBirth:0,
+      numberType:0,
+      exampleDescription:0,
     },
   },
   {
@@ -457,9 +457,9 @@ export default [
     numberType: 2,
     shortDescription: "",
     facts:{
-      year:0,
-      number:0,
-      example:0,
+      yearBirth:0,
+      numberType:0,
+      exampleDescription:0,
     },
   },
   {
@@ -478,9 +478,9 @@ export default [
     numberType: 7,
     shortDescription: "",
     facts:{
-      year:0,
-      number:0,
-      example:0,
+      yearBirth:0,
+      numberType:0,
+      exampleDescription:0,
     },
   },
   {
@@ -488,7 +488,7 @@ export default [
     name: "Nintendo Switch OLED",
     description: "Nintendo anunció oficialmente un nuevo modelo, llamado modelo OLED. Incorpora con una pantalla OLED de 720p de 7 pulgadas (180 mm) y, cuando esté acoplado, una salida a una resolución de 1080p. Cuenta con un almacenamiento mayor que el modelo base, de 64 GB, se mejoraron las funciones de audio y se le añadió un soporte ajustable más ancho para usar en modo de mesa. La unidad se envía con una base nueva que incluye un puerto LAN con cable.",
     imageUrl:
-      "https://fs-prod-cdn.nintendo-europe.com/media/images/08_content_images/systems_5/nintendo_switch_3/nintendo_switch_oled/gallery_oled_slideItem1.jpg",
+      "https://w7.pngwing.com/pngs/360/456/png-transparent-nintendo-switch-pro-controller-classic-controller-splatoon-2-joy-con-nintendo-electronics-nintendo-video-game.png",
     tipo: "Consola híbrida",
     precioDeLanzamiento: "  $349.99 USD",
     JuegoMásPopular:
@@ -499,9 +499,9 @@ export default [
     numberType: 2,
     shortDescription: "",
     facts:{
-      year:0,
-      number:0,
-      example:0,
+      yearBirth:0,
+      numberType:0,
+      exampleDescription:0,
     },
   },
 ];

@@ -35,10 +35,7 @@ export const renderItems = (data) => {
         </header>
         <main class="card-front__content">
           <h2 data-itemprop="name" > ${item.name} </h2>
-          <dl itemscope itemtype="consoles" class="card-back__details-list" style="margin-top: 20px;">
-          <dt class="card-back__details-title" >Precio de lanzamiento: </dt>
-            <dd class="card-back__item" itemprop="precioDeLanzamiento">${item.precioDeLanzamiento}</dd>
-            </dl>
+      
             </main>
         <footer class="card-front__footer">
         <figure onclick="(${toggleContent.toString().replace(/"/g, "'")}).call(this)" data-id="li-${item.id
@@ -60,7 +57,8 @@ export const renderItems = (data) => {
             <dd itemprop="description" class="card-back__details-description">${item.description}</dd>
             <dt class="card-back__details-title" style="margin-bottom: 0;">Tipo de consola: </dt>
             <dd class="card-back__item" itemprop="tipo">${item.tipo}</dd>
-
+            <dt class="card-back__details-title" >Precio de lanzamiento: </dt>
+            <dd class="card-back__item" itemprop="precioDeLanzamiento">${item.precioDeLanzamiento}</dd>
             <dt class="card-back__details-title">Duración en el mercado: </dt>
             <dd class="card-back__item" itemprop="DuraciónEnElMercado">${item.DuraciónEnElMercado}</dd>
             <dt class="card-back__details-title">Generacion:</dt>

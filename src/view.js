@@ -14,7 +14,7 @@ export const renderItems = (data) => {
     $tarjeta.setAttribute("id", `li-${item.id}`);
     $tarjeta.setAttribute("itemtype","consoles");
     $tarjeta.setAttribute("itemscope","");
-    
+
     const toggleContent = function () {
       const selector = this.getAttribute("data-id");
       const $tarjeta = document.getElementById(selector);
@@ -58,7 +58,7 @@ export const renderItems = (data) => {
             <dt class="card-back__details-title" style="margin-bottom: 0;">Tipo de consola: </dt>
             <dd class="card-back__item" itemprop="tipo">${item.tipo}</dd>
             <dt class="card-back__details-title">Precio de lanzamiento: </dt>
-            <dd class="card-back__item" itemprop="PrecioDeLanzamiento">${item.PrecioDeLanzamiento}</dd>
+            <dd class="card-back__item" itemprop="precioDeLanzamiento">${item.precioDeLanzamiento}</dd>
             <dt class="card-back__details-title">Duración en el mercado: </dt>
             <dd class="card-back__item" itemprop="DuraciónEnElMercado">${item.DuraciónEnElMercado}</dd>
             <dt class="card-back__details-title">Generacion:</dt>
@@ -71,7 +71,7 @@ export const renderItems = (data) => {
         <footer class="card-back__footer" >
           <figure class="card-back__footer-image">
             <img src alt  data-itemprop="imageUrlGame" />
-            
+
           </figure>
         </footer>
       </section>

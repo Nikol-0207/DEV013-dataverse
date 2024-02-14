@@ -5,7 +5,7 @@ export default [
     description:
       "Color TV-Game es la primera consola de vdeojuegos que fue lanzado solo en Japón en 1977, y presentó solo un juego; Light Tennis, que se veía y jugaba como Pong.Color TV-Game fue la primera consola de videojuegos doméstica de Nintendo y se comercializó exclusivamente en Japón. Esta consola incluía una serie de videojuegos almacenados en su memoria interna ya que aún no existían los cartuchos intercambiables.Hasta dos jugadores podrían jugar este juego, aunque no había controles desmontables, algo que Nintendo arreglaría.",
     imageUrl:
-      "https://e7.pngegg.com/pngimages/200/816/png-clipart-color-tv-game-pong-first-generation-of-video-game-consoles-nintendo-color-block-electronics-nintendo-thumbnail.png",
+      "https://upload.wikimedia.org/wikipedia/commons/7/7e/Nintendo-Color-TV-Game-Blockbreaker-FL.png",
     tipo: "Consola de sobremesa",
     precioDeLanzamiento: "$199 USD",
     JuegoMásPopular: "Variaciones del Pong",
@@ -89,7 +89,7 @@ export default [
     name: "Game Boy",
     description: "La Game Boy es una videoconsola portátil de 8 bits. Salió a la venta por primera vez en Japón el 21 de abril de 1989, en Norteamérica más tarde ese mismo año y en Europa a finales de 1990.Es la segunda consola portátil de Nintendo y combina características de la consola portátil Game & Watch y de la consola doméstica NES. En el momento de su lanzamiento, se vendió como unidad independiente o como paquete con uno de varios juegos, entre ellos Super Mario Land y Tetris.",
     imageUrl:
-      "https://e1.pngegg.com/pngimages/67/390/png-clipart-special-big-console-icons-gameboy-512-1.png",
+      "https://www.copetti.org/images/consoles/gameboy/international.073b2e0822d4b12492c46995f658e11eec17f424ce7f483b331c6f1294082246.png",
 
     tipo: "Consola portátil",
     precioDeLanzamiento: "$199 USD",
@@ -216,7 +216,7 @@ export default [
     name: "Game Boy Adv.",
     description: "La Game Boy Advance, abreviada como GBA. El modelo original no tenía una pantalla con iluminación, lo que fue solucionado con la Game Boy Advance SP, un rediseño de la consola que incluía algunas mejoras como la pantalla con iluminación y el uso de baterías de litio.A diferencia de las anteriores Game Boy que tenían la forma vertical de la Game Boy original, la Game Boy Advance fue diseñada por el francés Gwénaël Nicolas,  y su estudio Curiosity, en forma horizontal con los botones a los lados del dispositivo en vez de debajo de la pantalla.",
     imageUrl:
-      "https://p7.hiclipart.com/preview/403/300/915/game-boy-advance-game-boy-family-game-boy-color-video-game-nintendo.jpg",
+      "https://www.serebii.net/games/consoles/gameboyadvance.png",
 
     tipo: "Consola portátil",
     precioDeLanzamiento: "$99.99 USD",
@@ -322,7 +322,7 @@ export default [
     name: "Nintendo DSi XL",
     description: "Nintendo DSi XL es una videoconsola portátil, la consola no está pensada para ser una continuación de DSi, sino para complementarla y coexistir en el mercado, aunque para diferentes públicos, además de seguir manteniendo el liderazgo frente al sistema PlayStation Portable (PSP) de Sony.Nintendo DSi XL incluye todas las funciones de la videoconsola portátil Nintendo DSi: dos cámaras de fotos, editor de imágenes y sonido, grabadora y reproductor de sonido, la posibilidad de descargar programas directamente a la consola desde la aplicación Tienda Nintendo DSi.",
     imageUrl:
-      "https://w7.pngwing.com/pngs/559/603/png-transparent-flipnote-studio-wii-nintendo-dsi-nintendo-electronics-gadget-nintendo.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Nintendo-DSi-XL-Burg.png/2451px-Nintendo-DSi-XL-Burg.png",
 
     tipo: "Portátil doble pantalla",
     precioDeLanzamiento: "  $189.99 USD",
@@ -364,7 +364,7 @@ export default [
     id: "wii-mini",
     name: "Wii Mini",
     description: "Wii Mini significa menos tamaño pero también la reducción de funcionalidades. La retrocompatibilidad con los juegos de Gamecube se queda fuera así como las opciones online. Un hecho curioso, si bien es cierto que el fuerte de Wii no era el juego multijugador, si no el compartir esos momentos con los amigos. Llama la atención que una nueva consola de finales 2012 no disponga de conexión a Internet en esta era en la que hasta existen frigoríficos conectados a la red de redes.",
-    imageUrl: "https://w7.pngwing.com/pngs/1017/965/png-transparent-mario-kart-wii-wii-u-wii-remote-wii-motionplus-nintendo-electronics-gadget-nintendo.png",
+    imageUrl: "https://fs-prod-cdn.nintendo-europe.com/media/images/08_content_images/systems_5/wii_12/wii_mini/whatbox_wiiconsole.png",
 
     tipo: "Consola de sobremesa",
     precioDeLanzamiento: " $99.99 USD",
@@ -405,7 +405,7 @@ export default [
     id: "new-nintendo-3ds",
     name: "New Nintendo 3DS",
     description: "La New Nintendo 3DS presenta varios cambios respecto a la Nintendo 3DS original y a la Nintendo 3DS XL. Las adiciones más notables son la inclusión de una segunda palanca de control analógico en el lado derecho de la consola, conocida como el C-Stick, y los nuevos botones traseros ZL y ZR, lo que permite un control similar al que se consigue con el periférico adicional Circle Pad Pro lanzado para los modelos originales de Nintendo 3DS y Nintendo 3DS XL.",
-    imageUrl: "https://w7.pngwing.com/pngs/697/827/png-transparent-monster-hunter-4-super-smash-bros-for-nintendo-3ds-and-wii-u-new-nintendo-3ds-ds.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a1/New_Nintendo_3DS.png",
     tipo: "Consola portátil",
     precioDeLanzamiento: "$179.99 USD",
     JuegoMásPopular: "Super Smash Bros.",
@@ -425,7 +425,7 @@ export default [
     name: "Nintendo Classic Mini: Super NES",
     description: "Es una réplica en miniatura de la consola Super Nintendo (SNES). Su arquitectura está basada en la emulación de hardware, cuenta con una biblioteca permanente de 21 juegos integrados en su biblioteca, incluyendo algunos títulos de desarrolladores terceros bajo licencia de sus respectivos creadores. El sistema cuenta con salida de pantalla HDMI y un controlador réplica a escala de la versión original que también puede conectarse al puerto de Wii para su uso con juegos de consola virtual en Wii y Wii U.",
     imageUrl:
-      "https://w7.pngwing.com/pngs/266/819/png-transparent-super-nintendo-entertainment-system-the-legend-of-zelda-gamecube-super-nes-classic-edition-the-legend-of-zelda-electronics-gadget-nintendo-thumbnail.png",
+      "https://static.electrocosto.com/images/blog/regular/111_review-nintendo-classic-mini.jpg",
 
     tipo: "Consola de sobremesa",
     precioDeLanzamiento: " $79.99 USD",
@@ -488,7 +488,7 @@ export default [
     name: "Nintendo Switch OLED",
     description: "Nintendo anunció oficialmente un nuevo modelo, llamado modelo OLED. Incorpora con una pantalla OLED de 720p de 7 pulgadas (180 mm) y, cuando esté acoplado, una salida a una resolución de 1080p. Cuenta con un almacenamiento mayor que el modelo base, de 64 GB, se mejoraron las funciones de audio y se le añadió un soporte ajustable más ancho para usar en modo de mesa. La unidad se envía con una base nueva que incluye un puerto LAN con cable.",
     imageUrl:
-      "https://w7.pngwing.com/pngs/360/456/png-transparent-nintendo-switch-pro-controller-classic-controller-splatoon-2-joy-con-nintendo-electronics-nintendo-video-game.png",
+      "https://pepeganga.vtexassets.com/arquivos/ids/664237/100338210-1.png?v=637735344825630000",
     tipo: "Consola híbrida",
     precioDeLanzamiento: "  $349.99 USD",
     JuegoMásPopular:

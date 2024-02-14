@@ -1,5 +1,6 @@
 import { sortData,filterData,computeStats} from '../src/dataFunctions.js';
 import { data as fakeData } from './data.js';
+
 describe('sortData', () => {
   it('sorts data alfabeticamente en orden ascendete', () => {
     const sortedData = sortData(fakeData, 'name', 'abc');
@@ -21,7 +22,7 @@ describe('filterData', () => {
   it('filtrar por número de generación', () => {
     const filteredData = filterData(fakeData, 'select', '4');
     expect(filteredData.length).toBe(3);
-    expect(filteredData[0].name).toBe('Game Boy');
+    expect(filteredData[2].name).toBe('Game Boy');
   });
 
   it('filtrar por tipo de consola', () => {

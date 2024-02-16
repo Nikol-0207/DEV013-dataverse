@@ -37,22 +37,14 @@ export const renderItems = (data) => {
           <h2 data-itemprop="name" > ${item.name} </h2>
             </main>
         <footer class="card-front__footer">
-        <figure onclick="(${toggleContent
-          .toString()
-          .replace(/"/g, "'")}).call(this)" data-id="li-${
-      item.id
-    }" class="card-front__footer-image">
+        <figure onclick="(${toggleContent.toString().replace(/"/g, "'")}).call(this)" data-id="li-${item.id}" class="card-front__footer-image">
         <img src="${item.imageUrl}" alt  data-itemprop="imageUrl"  />
           </figure>
         </footer>
       </section>
       <section class="card-back">
       <header class="card-back__header">
-      <figure onclick="(${toggleContent
-        .toString()
-        .replace(/"/g, "'")}).call(this)" data-id="li-${
-      item.id
-    }" class="card-back__header-image">
+      <figure onclick="(${toggleContent.toString().replace(/"/g, "'")}).call(this)" data-id="li-${item.id}" class="card-back__header-image">
         <img src="${item.imageUrl}" alt  data-itemprop="imageUrl"  />
           </figure>
           <h2 data-itemprop="name" ></h2>
@@ -60,28 +52,18 @@ export const renderItems = (data) => {
         <main class="card-back__content">
           <dl itemscope itemtype="consoles" class="card-back__details-list">
             <dt ></dt>
-            <dd itemprop="description" class="card-back__details-description">${
-              item.description
-            }</dd>
+            <dd itemprop="description" class="card-back__details-description">${item.description}</dd>
             <dt class="card-back__details-title" style="margin-bottom: 0;">Tipo de consola: </dt>
             <dd class="card-back__item" itemprop="tipo">${item.tipo}</dd>
 
             <dt class="card-back__details-title">Duración en el mercado: </dt>
-            <dd class="card-back__item" itemprop="DuraciónEnElMercado">${
-              item.DuraciónEnElMercado
-            }</dd>
+            <dd class="card-back__item" itemprop="DuraciónEnElMercado">${item.DuraciónEnElMercado}</dd>
             <dt class="card-back__details-title">Generacion:</dt>
-            <dd class="card-back__item" itemprop="generation">${
-              item.generation
-            }</dd>
+            <dd class="card-back__item" itemprop="generation">${item.generation}</dd>
             <dt class="card-back__details-title">Juego más jugado:</dt>
-            <dd class="card-back__item" itemprop="JuegoMásPopular">${
-              item.JuegoMásPopular
-            }</dd>
+            <dd class="card-back__item" itemprop="JuegoMásPopular">${item.JuegoMásPopular}</dd>
             <dt class="card-back__details-title" >Precio de lanzamiento: </dt>
-            <dd class="card-back__item" itemprop="precioDeLanzamiento">${
-              item.precioDeLanzamiento
-            }</dd>
+            <dd class="card-back__item" itemprop="precioDeLanzamiento">${item.precioDeLanzamiento}</dd>
 
           </dl>
         </main>
@@ -112,23 +94,23 @@ export const renderBackground = () => {
     { length: 100 },
     (_, i) => `
     <i class="fi fi-rs-gamepad" style="--color: hsl(${
-      (i + j) * 18
-    }, 90%, 50%);"></i>
+  (i + j) * 18
+}, 90%, 50%);"></i>
     <i class="fi fi-rs-bomb" style="--color:  hsl(${
-      (i + j) * 18
-    }, 90%, 50%);"></i>
+  (i + j) * 18
+}, 90%, 50%);"></i>
     <i class="fi fi-rs-joystick" style="--color:  hsl(${
-      (i + j) * 18
-    }, 90%, 50%);"></i>
+  (i + j) * 18
+}, 90%, 50%);"></i>
     <i class="fi fi-rs-treasure-chest" style="--color:  hsl(${
-      (i + j) * 18
-    }, 90%, 50%);"></i>
+  (i + j) * 18
+}, 90%, 50%);"></i>
     <i class="fi fi-rs-dice-d12" style="--color:  hsl(${
-      (i + j) * 18
-    }, 90%, 50%);"></i>
+  (i + j) * 18
+}, 90%, 50%);"></i>
     <i class="fi fi-rr-dice-d6" style="--color:  hsl(${
-      (i + j) * 18
-    }, 90%, 50%);"></i>
+  (i + j) * 18
+}, 90%, 50%);"></i>
 
   `
   ).join("")}

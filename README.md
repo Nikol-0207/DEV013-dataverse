@@ -69,13 +69,13 @@ De ambos diseño lo que más menos cambios tuvo fue la posición de los filtros,
 
 [![finalprot.png](https://i.postimg.cc/ZRLXvy50/finalprot.png)](https://postimg.cc/62yMDqRN)
 
-##Dificultades en el proceso de usabilidad
+## Dificultades en el proceso de usabilidad
 
 * Hubo problemas con el filtro de buscar, el cual requeria que escribas el nombre de la consola que querias ver, el problema era que en un principio si no tomaba en cuenta los espacios que podria haber delante o atrás del texto, no habria resultados. Teniendo en cuenta que se quiere un algoritmo de búsqueda por defecto te encuentre lo que buscas escribiendo el 70% del nombre.
 * Al momento de sacar un dato estadistico y mostrarlo tenia un margen de error que los datos no se visualizaban bien, debido a que cuando habia muchas datas de las cules iba a verse el resultado el tamaño se encogia haciendo que sea más pequeño aquellos datos.
 * El atractivo que le quisimos poner fue de que voltearan las tarjetas al hacerle click en la figura de alienigena pero este no resultaba por ende hubo muchos arreglos ahi.
 
-##Funcionalidad ( funciones )
+## Funcionalidad ( funciones )
 
 ####Javascript　
 

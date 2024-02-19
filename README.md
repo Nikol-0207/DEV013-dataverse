@@ -11,7 +11,7 @@ Dichas consolas tendran una descripción y otros datos que podrian ser de intere
 * [2. Prompt Usado en la IA para generar la data](Prompt-IA)
 * [ 3. Diseño de DataVerse](#diseño-de-dataverse)
 * [ 4. Dificultades en el proceso de usabilidad](#dificultades-en-el-proceso-de-usabilidad)
-* [ 5. Funcionalidades](#funcionalidad-funciones)
+* [ 5. Funcionalidades](#funciones)
 ------
 
 ## Historias de usuario
@@ -36,7 +36,7 @@ Dichas consolas tendran una descripción y otros datos que podrian ser de intere
 | -----------------|
 | Como usuario web fan de los videojuegos y/o consolas nintendo quisiera ver como fueron las consolas lanzadas cada generación/año hasta hoy. |
 
-##Prompt IA
+## Prompt IA
 Orden para el primer data
 
 [![proompt.png](https://i.postimg.cc/h4MxGPcj/proompt.png)](https://postimg.cc/K4k4qbKS)
@@ -75,9 +75,9 @@ De ambos diseño lo que más menos cambios tuvo fue la posición de los filtros,
 * Al momento de sacar un dato estadistico y mostrarlo tenia un margen de error que los datos no se visualizaban bien, debido a que cuando habia muchas datas de las cules iba a verse el resultado el tamaño se encogia haciendo que sea más pequeño aquellos datos.
 * El atractivo que le quisimos poner fue de que voltearan las tarjetas al hacerle click en la figura de alienigena pero este no resultaba por ende hubo muchos arreglos ahi.
 
-## Funcionalidad ( funciones )
+## Funciones
 
-####Javascript　
+#### Javascript　
 
 **Ordenar :** Esta función de tres parametros ordena la data por nombre, ya sea ascendente o descendente, el primer parametro manda la data, el segundo indica por cual campo vamos a ordenar asc o desc, en este caso por nombre, tercer parametro indica el valor del selector que vas a seleccionar, si ascendente o descendente.
 

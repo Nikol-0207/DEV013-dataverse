@@ -2,7 +2,7 @@
 
 
 export const sortData = (data,sortBy, sortOrder) => {
-  if (sortOrder==="abc"){  //verificacion de ordenanza
+  if (sortOrder==="asc"){  //verificacion de ordenanza
     return data.sort((a, b) => {
       const nameA = a[sortBy].toUpperCase();  //convierte a mayuscula para no cometer errores al momento de ordenar
       const nameB = b[sortBy].toUpperCase();
@@ -14,7 +14,7 @@ export const sortData = (data,sortBy, sortOrder) => {
       }
       return 0;  // caso contrario si son iguales
     });
-  }else if (sortOrder ==="cba"){  //en caso descendente sera al reves
+  }else if (sortOrder ==="desc"){  //en caso descendente sera al reves
     return data.sort((a, b) => {
       const nameA = a[sortBy].toUpperCase(); //sortBy indicara por que campo se ordenara asc o desd
       const nameB = b[sortBy].toUpperCase(); //en este caso se ordenara por nombre

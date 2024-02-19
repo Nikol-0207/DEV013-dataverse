@@ -7,7 +7,7 @@ import { renderItems, renderBackground } from "./view.js";
 import data from "./data/dataset.js";
 
 let currentData = data; //variable global para guardar los cambios de la data y se guarde cuando halla cambios en filtros y pueda ordenar por ese
-// Obtener el nombre del selector en forma de cadena
+
 const $selecType = document.querySelector('[name="type-order"]');
 const $selection = document.querySelector("#mySelect");
 const $iconos = document.querySelector("#iconos");
@@ -44,7 +44,7 @@ $selecType.addEventListener("input", (event) => {
   const selectorName = document.querySelector("#type").getAttribute("name"); //consigo en String devulva el nombre del elemento
   const selectedType = event.target.value;
   const filtered = filterData(data, selectorName, selectedType);
-  currentData = filtered;  //se guarda en esta variable globl para ver la actual data 
+  currentData = filtered;  //se guarda en esta variable globl para ver la actual data
   actualizarTarjetas(filtered);
 });
 
@@ -69,9 +69,9 @@ closeButton.addEventListener("click", hidePopup);
 // Crear el histograma con Chart.js
 let histogram;
 
-function getInfoToFilters() {
-  const cardsInformation = Array.from(document.querySelectorAll(`.card-back`));
-  const data = cardsInformation.map(function (card) {
+function getInfoToFilters() { //recopilacion de informacion
+  const cardsInformation = Array.from(document.querySelectorAll(`.card-back`));  //convertir en matriz
+  const data = cardsInformation.map(function (card) {  //iteracion sobre cada tarjeta
     return {
       precioDeLanzamiento: parseInt(
         card.querySelector(`[itemprop="precioDeLanzamiento"]`).textContent.split(".")[0].replace(/\D/g, "")),
@@ -151,6 +151,10 @@ $botonBuscar.addEventListener("click", () => {
 });
 
 $botonReset.addEventListener("click", () => {
-  actualizarTarjetas(data);
   $buscador.value = "";
+  $selecType.selectedIndex=0;
+  $selection.selectedIndex=0;
+  $ordenarSelect.selectedIndex=0;
+  actualizarTarjetas(data);
+
 });

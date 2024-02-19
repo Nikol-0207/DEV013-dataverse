@@ -13,8 +13,33 @@ Dichas consolas tendran una descripción y otros datos que podrian ser de intere
 ------
 
 ## Historias de usuario
-dsvfdbrthregfrgvfgrhythrtgefergewrewgergergergergergergergregergergergergergergergergergergergergergergergergergergergergergergergergergerddffgdfgdfgdfgdfgdfgddfgdfgdfgsfdssfgegvgdfgdfgdgdfgdfgdfgdfgdgdfgdgdgdfgdfgdfgdgdfgdgdgdfgdfgdfgdgdfgdfgdfgfdgdfgdggdgdfg dfvvvvvvcvcv vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+
+| Usuario    1      |
+| -----------------|
+| Como usuario web, quiero poder visualizar las datas de consolas por generación. |
+
+| Usuario   2      |
+| -----------------|
+| Como usuario web, quisiera poder ordenar la data según el filtrado este actualmente.       |
+
+| Usuario   3      |
+| -----------------|
+| Como usuario web, quiero saber el precio de cada consola para saber como esta en el mercado y poder comparar con otras consolas. |
+
+| Usuario   4      |
+| -----------------|
+| Como usuario web, quisiera tener la facilidad de buscar una consola por su nombre y así no desperdiciar tiempo.  |
+
+| Usuario   5      |
+| -----------------|
+| Como usuario web fan de los videojuegos y/o consolas nintendo quisiera ver como fueron las consolas lanzadas cada generación/año hasta hoy. |
+
 ## Diseño de DataVerse
-
-
-## Dificultades en el proceso de usabilidad
+**Prototipo 1**
+[![prototipouno.png](https://i.postimg.cc/j2C3d9VM/prototipouno.png)](https://postimg.cc/LgK3xx8P)
+**Prototipo 2**
+[![prototipo2.png](https://i.postimg.cc/59kkkxvT/prototipo2.png)](https://postimg.cc/K4BN1h0D)
+De ambos diseño lo que más menos cambios tuvo fue la posición de los filtros, buscador y botones.
+**Prototipo Final**
+[![finalprot.png](https://i.postimg.cc/ZRLXvy50/finalprot.png)](https://postimg.cc/62yMDqRN)
+##Dificultades en el proceso de usabilidad

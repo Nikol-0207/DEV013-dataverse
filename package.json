@@ -50,6 +50,7 @@
     "testEnvironment": "jsdom"
   },
   "dependencies": {
-    "chart.js": "^4.4.1"
+    "chart.js": "^4.4.1",
+    "playwright": "^1.41.2"
   }
 }

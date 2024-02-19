@@ -7,7 +7,7 @@ import { renderItems, renderBackground } from "./view.js";
 import data from "./data/dataset.js";
 
 let currentData = data; //variable global para guardar los cambios de la data y se guarde cuando halla cambios en filtros y pueda ordenar por ese
-// Obtener el nombre del selector en forma de cadena
+
 const $selecType = document.querySelector('[name="type-order"]');
 const $selection = document.querySelector("#mySelect");
 const $iconos = document.querySelector("#iconos");
@@ -41,10 +41,10 @@ $selection.addEventListener("change", (event) => {
 });
 
 $selecType.addEventListener("input", (event) => {
-  const selectorName = document.querySelector("#type").getAttribute("name");
+  const selectorName = document.querySelector("#type").getAttribute("name"); //consigo en String devulva el nombre del elemento
   const selectedType = event.target.value;
   const filtered = filterData(data, selectorName, selectedType);
-  currentData = filtered;
+  currentData = filtered;  //se guarda en esta variable globl para ver la actual data
   actualizarTarjetas(filtered);
 });
 
@@ -56,7 +56,7 @@ $ordenarSelect.addEventListener("change", () => {
   actualizarTarjetas(datosOrdenados);
 });
 function showPopup() {
-  blurBackground.style.display = "block";
+  blurBackground.style.display = "block"; //bloquea que tenga iteracion con la pagina aparte de la ventana emergente
   document.body.style.overflow = "hidden";
   popup.style.display = "block";
 }
@@ -69,9 +69,9 @@ closeButton.addEventListener("click", hidePopup);
 // Crear el histograma con Chart.js
 let histogram;
 
-function getInfoToFilters() {
-  const cardsInformation = Array.from(document.querySelectorAll(`.card-back`));
-  const data = cardsInformation.map(function (card) {
+function getInfoToFilters() { //recopilacion de informacion
+  const cardsInformation = Array.from(document.querySelectorAll(`.card-back`));  //convertir en matriz
+  const data = cardsInformation.map(function (card) {  //iteracion sobre cada tarjeta
     return {
       precioDeLanzamiento: parseInt(
         card.querySelector(`[itemprop="precioDeLanzamiento"]`).textContent.split(".")[0].replace(/\D/g, "")),
@@ -83,14 +83,15 @@ function getInfoToFilters() {
   const sumaGeneraciones = computeStats(dataSort);
   return sumaGeneraciones;
 }
-function showStatistics() {
-  blurBackground.style.display = "block";
+
+function showStatistics() {  //todo lo dentro de esta funcion se activa solamente cuando se llame a la funcion
+  blurBackground.style.display =  "block";
   statistics.style.display = "flex";
   const ctx = document.getElementById("histograma").getContext("2d");
   const generationPrice = getInfoToFilters();
   // eslint-disable-next-line no-undef
   histogram = new Chart(ctx, {
-    type: "polarArea",
+    type: 'polarArea',
     data: {
       labels: Object.keys(generationPrice),
       datasets: [
@@ -117,8 +118,7 @@ function showStatistics() {
     },
     options: {
       responsive: true,
-      width: 600,
-      height: 400,
+
       scales: {
         y: {
           beginAtZero: true,
@@ -129,7 +129,7 @@ function showStatistics() {
 }
 function hideStatistics() {
   histogram.destroy();
-  blurBackground.style.display = "none";
+  blurBackground.style.display = "none";   //se desactiva el bloqueo para que el usuario pueda seguir iterando con la pagina
   statistics.style.display = "none";
 }
 
@@ -146,11 +146,15 @@ $botonBuscar.addEventListener("click", () => {
   if (filteredData.length > 0) {
     actualizarTarjetas(filteredData);
   } else {
-    showPopup();
+    showPopup();  //funcion que hace aparacer la ventana emergente
   }
 });
 
 $botonReset.addEventListener("click", () => {
-  actualizarTarjetas(data);
   $buscador.value = "";
+  $selecType.selectedIndex=0;
+  $selection.selectedIndex=0;
+  $ordenarSelect.selectedIndex=0;
+  actualizarTarjetas(data);
+
 });

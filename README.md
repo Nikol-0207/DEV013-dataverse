@@ -36,10 +36,15 @@ Dichas consolas tendran una descripción y otros datos que podrian ser de intere
 
 ## Diseño de DataVerse
 **Prototipo 1**
+
 [![prototipouno.png](https://i.postimg.cc/j2C3d9VM/prototipouno.png)](https://postimg.cc/LgK3xx8P)
 **Prototipo 2**
+
 [![prototipo2.png](https://i.postimg.cc/59kkkxvT/prototipo2.png)](https://postimg.cc/K4BN1h0D)
+
 De ambos diseño lo que más menos cambios tuvo fue la posición de los filtros, buscador y botones.
+
 **Prototipo Final**
+
 [![finalprot.png](https://i.postimg.cc/ZRLXvy50/finalprot.png)](https://postimg.cc/62yMDqRN)
 ##Dificultades en el proceso de usabilidad

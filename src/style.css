@@ -691,15 +691,26 @@ select[name="type-order"] {
     height: 35%;
   }
   .imgPopup {
-   width: 200px;
-   height: 150px;
+   width: 100px;
+   height: 100px;
   }
   .estadisticas {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 35%;
+    left: 50%;
+    top: 50%;
     transform: translate(-50%,-50%) scale(1);
     margin: 0;
+    background: #f9f9f9;
   }
+  .contenido-esta{
+    overflow: hidden;
+
+  }
+  #histograma {
+    width: 80px;
+    height: 50px;
+   }
   .card-back {
    padding: 0.6rem;
    font-size: 7pt;
@@ -718,4 +729,5 @@ select[name="type-order"] {
     height: 25px;
     border-left: 10px solid rgb(136, 15, 15);
   }
+
  }

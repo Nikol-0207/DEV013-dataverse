@@ -118,12 +118,12 @@ function showStatistics() {  //todo lo dentro de esta funcion se activa solament
     },
     options: {
       responsive: true,
-
       scales: {
         y: {
-          beginAtZero: true,
+          beginAtZero: false,
         },
       },
+      
     },
   });
 }
